@@ -21,6 +21,15 @@ driver = webdriver.Chrome(service=service, options=chrome_options)
 # URL of the page to scrape
 url = 'https://www.economie.gouv.fr/recherche-resultat?search_api_views_fulltext=IA&page=0'
 
+
+import undetected_chromedriver as uc
+from selenium import webdriver
+
+options = webdriver.ChromeOptions() 
+options.add_argument("start-maximized")
+driver = uc.Chrome(options=options)
+
+
 # Navigate to the page
 driver.get(url)
 
@@ -58,8 +67,8 @@ if parent_div:
     for result in search_results:
         # You need to find the actual elements within each 'views-row' div
         # that contain the title and the link, for example:
-        # title = result.find('h2').text  # Assuming the title is in an 'h2' tag
-        # link = result.find('a')['href']  # Assuming the link is in an 'a' tag
+        title = result.find('h2').text  # Assuming the title is in an 'h2' tag
+        link = result.find('a')['href']  # Assuming the link is in an 'a' tag
         # Add the result to the data list as a dictionary
         data.append({
             'title': title,
@@ -76,30 +85,3 @@ df = pd.DataFrame(data)
 
 # Display the DataFrame
 print(df)
-
-"""
-# Create a list to hold your data
-data = []
-
-# Extract the text or attributes from the search results
-for result in search_results:
-    # Create a dictionary for each result
-    row_data = {
-        'title': result.find('h3').text.strip(),  # Replace with the actual HTML structure
-        'link': result.find('a')['href'].strip()   # Replace with the actual HTML structure
-    }
-    # Add the dictionary to your list
-    data.append(row_data)
-
-# Close the browser window
-driver.quit()
-
-# Create a DataFrame from your list of dictionaries
-df = pd.DataFrame(data)
-
-# Display the DataFrame
-print(df)
-
-"""
-
-
