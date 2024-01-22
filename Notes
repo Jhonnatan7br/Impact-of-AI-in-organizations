@@ -1,8 +1,8 @@
+pip install matplotlib
 pip install bs4
 pip install selenium
 pip install webdriver_manager
 pip install undetected_chromedriver
 pip install requests beautifulsoup4
 pip install googlesearch-python
-
 pip install streamlit
