@@ -5,4 +5,8 @@ pip install webdriver_manager
 pip install undetected_chromedriver
 pip install requests beautifulsoup4
 pip install googlesearch-python
+
 pip install streamlit
+pip install azure-ai-textanalytics
+pip install azure-identity
+pip install python-dotenv
