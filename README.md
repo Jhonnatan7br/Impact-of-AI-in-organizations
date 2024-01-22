@@ -19,6 +19,7 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
     Sample:
     https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/textanalytics/azure-ai-textanalytics/samples/sample_analyze_sentiment.py
 - Creating virtual environment variables with Azure "text analysis" key and enpoint on a file .env and calling it on python script as the following structure:
+    
     Load environment variables from the .env file
     load_dotenv()
     Access the environment variables
