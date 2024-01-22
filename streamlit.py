@@ -3,10 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Title of the app
-st.title('Publications per Year - Line Graph')
+# st.title('Publications per Year - Line Graph')
 
 # File uploader to allow users to upload their own CSV file
-uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+uploaded_file = st.file_uploader("Datasetes/scopus", type="csv")
 if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
 
