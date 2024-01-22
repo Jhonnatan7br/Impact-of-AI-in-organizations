@@ -1,3 +1,6 @@
+To Solve
+Message: Batch request contains too many records. Max 10 records are permitted.
+
 # Explanaiton of resources, process and requirements
 
 Aim of subject and experiemnts diagram
@@ -40,7 +43,7 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
     pip install azure-ai-textanalytics
     pip install azure-identity
     pip install python-dotenv
-    
+
 - 
 
 ### References
