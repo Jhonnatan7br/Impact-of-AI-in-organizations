@@ -1,0 +1,43 @@
+import requests
+from bs4 import BeautifulSoup
+import csv
+
+# Function to scrape news articles from a search query
+def scrape_news(search_query):
+    search_url = f'https://www.google.com/search?q={search_query}&tbm=nws'
+    search_url = "https://www.google.com/search?sca_esv=600355914&rlz=1C1ALOY_esCO1061CO1062&sxsrf=ACQVn0-s5jhE0M-ejUrrOlkFqdi2cBE0Zw:1705913454716&q=AI+BUsiness+France&tbm=nws&source=lnms&sa=X&ved=2ahUKEwjWoPHrzvCDAxUiVqQEHcx9DPUQ0pQJegQIChAB&biw=1600&bih=747&dpr=1.2"
+    response = requests.get(search_url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    # Extract news article information
+    articles = []
+    for result in soup.find_all('div', class_='tF2Cxc'):
+        title = result.h3.text
+        link = result.a['href']
+        description = result.find('div', class_='Y3v8qd').text
+        articles.append([title, link, description])
+
+    return articles
+
+# Function to create a CSV file and store the scraped data
+def create_and_save_csv(data):
+    with open('Datasets/news_articles.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        fieldnames = ['Title', 'Link', 'Description']
+        writer = csv.writer(csvfile)
+        writer.writerow(fieldnames)
+
+        for article in data:
+            writer.writerow(article)
+
+if __name__ == "__main__":
+    # Enter your search query here
+    search_query = 'latest news'
+
+    # Scrape news articles from the search query
+    news_data = scrape_news(search_query)
+
+    # Create and save a CSV file in the 'Datasets' folder
+    create_and_save_csv(news_data)
+
+    print(f"{len(news_data)} news articles scraped and saved to 'Datasets/news_articles.csv'")
+
