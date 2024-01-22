@@ -22,6 +22,10 @@ USAGE:
     1) AZURE_LANGUAGE_ENDPOINT - the endpoint to your Language resource.
     2) AZURE_LANGUAGE_KEY - your Language subscription key
 """
+import pandas as pd
+research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/scopus.csv")
+research.head()
+research.describe()
 
 
 def sample_analyze_sentiment() -> None:
@@ -51,7 +55,10 @@ def sample_analyze_sentiment() -> None:
     #key = os.environ["AZURE_LANGUAGE_KEY"]
 
     text_analytics_client = TextAnalyticsClient(endpoint=endpoint, credential=AzureKeyCredential(key))
-
+    # Extract descriptions from the 'description' column of the dataframe
+    documents = research['description'].tolist()
+    
+    
     documents = [
         """I had the best day of my life. I decided to go sky-diving and it made me appreciate my whole life so much more.
         I developed a deep-connection with my instructor as well, and I feel as if I've made a life-long friend in her.""",
