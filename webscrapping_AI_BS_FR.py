@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 
 # Function to scrape news articles from a Google search query
-def scrape_news(search_query, num_results=250):
+def scrape_news(search_query, num_results=9):
     articles = []
 
     # Perform a Google search and fetch the results
@@ -40,7 +40,7 @@ def scrape_news(search_query, num_results=250):
 
 # Function to create a CSV file and store the scraped data
 def create_and_save_csv(data):
-    with open('Datasets/news_articles.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open('Datasets/5Knews_articles.csv', 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['Title', 'Link', 'Description', 'Publication Date']
         writer = csv.writer(csvfile)
         writer.writerow(fieldnames)
@@ -50,12 +50,12 @@ def create_and_save_csv(data):
 
 if __name__ == "__main__":
     # Enter your search query here
-    search_query = 'AI Business France'
+    search_query = 'AI Business France (Only English news)'
 
     # Scrape news articles from the Google search
     news_data = scrape_news(search_query)
 
     # Create and save a CSV file in the 'Datasets' folder
     create_and_save_csv(news_data)
-
-    print(f"{len(news_data)} news articles scraped and saved to 'Datasets/news_articles.csv'")
+    print(f"{len(news_data)} news articles scraped and saved to 'Datasets/5Knews_articles.csv'")    
+    #print(f"{len(news_data)} news articles scraped and saved to 'Datasets/news_articles.csv'")

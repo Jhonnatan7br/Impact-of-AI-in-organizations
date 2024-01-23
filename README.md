@@ -32,6 +32,7 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
 - Required Libraries
 
     pip install matplotlib
+    pip install wordcloud
     pip install bs4
     pip install selenium
     pip install webdriver_manager
