@@ -23,7 +23,7 @@ USAGE:
     2) AZURE_LANGUAGE_KEY - your Language subscription key
 """
 import pandas as pd
-research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/5Knews_articles.csv")
+research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/scopus_AI_business.csv")
 research.head()
 research.describe()
 
@@ -69,7 +69,7 @@ def sample_analyze_sentiment() -> None:
     ]
     # Extract descriptions from the 'description' column of the dataframe
     # Extract descriptions from the 'description' column of the dataframe
-    documents = research['Description'].tolist()
+    documents = research['Abstract'].tolist()
     documents = [f'"""{doc}"""' for doc in documents]
     #documents
 

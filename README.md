@@ -47,6 +47,7 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
     pip install undetected_chromedriver
     pip install requests beautifulsoup4
     pip install googlesearch-python
+    pip install scrapingbee
 
     pip install streamlit
     pip install azure-ai-textanalytics
