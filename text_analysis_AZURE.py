@@ -23,11 +23,13 @@ USAGE:
     2) AZURE_LANGUAGE_KEY - your Language subscription key
 """
 import pandas as pd
-research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/scopus_AI_business.csv")
+research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/scopus.csv")
 research.head()
 research.describe()
+# Create a sub-dataset with the first 10 lines
+sub_dataset = research.head(10)
 
-    
+
 def sample_analyze_sentiment() -> None:
     print(
         "In this sample we will be combing through reviews customers have left about their"
@@ -67,11 +69,12 @@ def sample_analyze_sentiment() -> None:
         in my backyard this whole time! I will definitely be a repeat customer, and I want to take my grandmother skydiving too,
         I know she'll love it!"""
     ]
+    
     # Extract descriptions from the 'description' column of the dataframe
-    # Extract descriptions from the 'description' column of the dataframe
-    documents = research['Abstract'].tolist()
+    documents = sub_dataset['Abstract'].tolist()
     documents = [f'"""{doc}"""' for doc in documents]
-    #documents
+
+    # Extract descriptions from the 'Abstract' column of the dataframe
 
 
     result = text_analytics_client.analyze_sentiment(documents, show_opinion_mining=True)
