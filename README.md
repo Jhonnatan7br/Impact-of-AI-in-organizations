@@ -1,4 +1,6 @@
-#### This repository is on construction
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d87a7990-b7c8-4769-a55e-9e028f2ca039)
+
+# This repository is on construction
 # To Solve
 
 - Text analysis Message: Batch request contains too many records. Max 10 records are permitted. (Create a cycle to iterate)
