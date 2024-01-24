@@ -27,7 +27,7 @@ research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-orga
 research.head()
 research.describe()
 
-
+    
 def sample_analyze_sentiment() -> None:
     print(
         "In this sample we will be combing through reviews customers have left about their"
