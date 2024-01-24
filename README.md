@@ -1,7 +1,6 @@
 #### This repository is on construction
 # To Solve
 
-- Web scrapping: Minimum 5000 only on english
 - Text analysis Message: Batch request contains too many records. Max 10 records are permitted. (Create a cycle to iterate)
   https://language.cognitive.azure.com/tryout/namedEntities 
 - Topic Modeling with LSA, PLSA, LDA & lda2Vec (Also consider BERT)
@@ -29,6 +28,7 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
     
     Sample:
     https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/textanalytics/azure-ai-textanalytics/samples/sample_analyze_sentiment.py
+
 - Creating virtual environment variables with Azure "text analysis" key and enpoint on a file .env and calling it on python script as the following structure:
     
     Load environment variables from the .env file
@@ -47,7 +47,6 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
     pip install undetected_chromedriver
     pip install requests beautifulsoup4
     pip install googlesearch-python
-    pip install scrapingbee
 
     pip install streamlit
     pip install azure-ai-textanalytics
