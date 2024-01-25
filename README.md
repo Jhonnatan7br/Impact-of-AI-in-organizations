@@ -26,6 +26,10 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
 
 ### Principal processes and requirements (AZURE, webscrapping, libraries, etc)
 
+- Topic modeling documentation: https://github.com/piskvorky/gensim?tab=readme-ov-file
+
+- Topic Modeling Gensim quick guide: https://radimrehurek.com/gensim/auto_examples/core/run_core_concepts.html
+
 - Creating Azure resource text analysis on Language studio to obtain API key and enpoint for procesing text analysis 
     
     Sample:
