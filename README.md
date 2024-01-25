@@ -39,7 +39,7 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
         key = os.getenv("AZURE_TEXT_ANALYSIS_KEY")    
 
 - Required Libraries
-
+    # For Webscrapping
     - pip install matplotlib
     - pip install wordcloud
     - pip install bs4
@@ -49,9 +49,35 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
     - pip install requests beautifulsoup4
     - pip install googlesearch-python
     - pip install streamlit
+
+    # For Azure and other API's connection
     - pip install azure-ai-textanalytics
     - pip install azure-identity
     - pip install python-dotenv
+
+    # For Topic Modeling 
+    - pip install --upgrade gensim
+    - pip install Pyro4
+    - pip install Sphinx
+    - pip install annoy
+    - pip install memory-profiler
+    - pip install nltk
+    - pip install nmslib ***
+     
+    - pip install POT
+    - pip install scikit-learn
+    - pip install sphinx-gallery
+    - pip install sphinxcontrib-napoleon
+    - pip install sphinxcontrib-programoutput
+    - pip install statsmodels
+    - pip install testfixtures
+
+    For better optimization with NumPy and OpenBLAS
+    - pip install numpy --only-binary :numpy: numpy
+    - pip install numpy --no-binary numpy
+
+
+
 
 - 
 
