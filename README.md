@@ -12,7 +12,7 @@ https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65
 
 # Explanaiton of resources, process and requirements
 
-Aim of subject and experiemnts diagram
+Aim of subjec, experiemnts & diagram
 
 ### Data
 - source: URL
@@ -33,27 +33,25 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
 
 - Creating virtual environment variables with Azure "text analysis" key and enpoint on a file .env and calling it on python script as the following structure:
     
-    Load environment variables from the .env file
-    load_dotenv()
-    Access the environment variables
-    endpoint = os.getenv("AZURE_TEXT_ANALYSIS_ENDPOINT")
-    key = os.getenv("AZURE_TEXT_ANALYSIS_KEY")    
+    - Load environment variables from the .env file, these would be the keys and endpoint for used API's - load_dotenv()
+    - Access the environment variables
+        endpoint = os.getenv("AZURE_TEXT_ANALYSIS_ENDPOINT")
+        key = os.getenv("AZURE_TEXT_ANALYSIS_KEY")    
 
 - Required Libraries
 
-    pip install matplotlib
-    pip install wordcloud
-    pip install bs4
-    pip install selenium
-    pip install webdriver_manager
-    pip install undetected_chromedriver
-    pip install requests beautifulsoup4
-    pip install googlesearch-python
-
-    pip install streamlit
-    pip install azure-ai-textanalytics
-    pip install azure-identity
-    pip install python-dotenv
+    - pip install matplotlib
+    - pip install wordcloud
+    - pip install bs4
+    - pip install selenium
+    - pip install webdriver_manager
+    - pip install undetected_chromedriver
+    - pip install requests beautifulsoup4
+    - pip install googlesearch-python
+    - pip install streamlit
+    - pip install azure-ai-textanalytics
+    - pip install azure-identity
+    - pip install python-dotenv
 
 - 
 
