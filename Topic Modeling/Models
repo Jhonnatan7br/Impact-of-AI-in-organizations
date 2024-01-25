@@ -1,0 +1,17 @@
+Here is a comparison table of the characteristics of LSA, PLSA, LDA, and lda2Vec:
+
+| **Technique** | **Description** | **Advantages** | **Disadvantages** |
+|------------|-----------------|----------------|-------------------|
+| LSA | Latent Semantic Analysis (LSA) is a technique that uses singular value decomposition (SVD) to reduce the dimensionality of a document-term matrix and obtain topic vectors for documents and terms. | - Simple and fast to compute. <br> - Good for small datasets. | - Does not model word co-occurrence probabilities. <br> - Does not capture word polysemy. |
+| PLSA | Probabilistic Latent Semantic Analysis (PLSA) is a probabilistic extension of LSA that models the joint probability of documents and words using latent topics, and uses expectation-maximization (EM) to estimate the parameters. | - Captures word co-occurrence probabilities. <br> - Better than LSA for large datasets. | - Does not model word polysemy. <br> - Overfits on small datasets. |
+| LDA | Latent Dirichlet Allocation (LDA) is a Bayesian version of PLSA that uses dirichlet priors for the document-topic and word-topic distributions, and allows for better generalization to new documents. | - Captures word co-occurrence probabilities. <br> - Better than PLSA for large datasets. <br> - Models word polysemy. | - Slower than PLSA. <br> - More complex than PLSA. |
+| lda2Vec | lda2vec is a deep learning-based approach that combines word2vec and LDA to jointly learn word, document, and topic vectors. | - Captures word co-occurrence probabilities. <br> - Better than LDA for large datasets. <br> - Models word polysemy. <br> - Can learn topic embeddings that are more interpretable than LDA. | - Slower than LDA. <br> - More complex than LDA. |
+
+I hope this helps!
+
+Source: Conversation with Bing, 25/1/2024
+(1) Topic Modeling with LSA, PLSA, LDA & lda2Vec - Medium. https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05.
+(2) Topic Modelling: A Comparison Between LDA, NMF, BERTopic and ... - Medium. https://medium.com/blend360/topic-modelling-a-comparison-between-lda-nmf-bertopic-and-top2vec-part-i-3c16372d51f0.
+(3) Topic Modeling: LSA, PLSA, LDA, & lda2vec - Joyce Xu. https://www.joycexu.io/2018/topic-modeling/.
+(4) LSA / PLSA / LDA - GitHub Pages. https://ppasupat.github.io/a9online/wtf-is/lsa-plsa-lda.html.
+(5) What are the current approaches to topic modelling (i.e. better than .... https://stats.stackexchange.com/questions/523155/what-are-the-current-approaches-to-topic-modelling-i-e-better-than-lsa-lda-l.
