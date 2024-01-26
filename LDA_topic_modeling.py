@@ -1,3 +1,5 @@
+#%%
+
 #Document: some text.
 #Corpus: a collection of documents.
 #Vector: a mathematically convenient representation of a document.
@@ -40,7 +42,7 @@ for text in texts:
 processed_corpus = [[token for token in text if frequency[token] > 1] for text in texts]
 pprint.pprint(processed_corpus)
 
-#%%
+
 # Attempting to directly pass processed_corpus to LdaModel without first converting it to a Bag-of-Words (BoW) format using the doc2bow method for each document
 
 # Create Dictionary for processed corpus
