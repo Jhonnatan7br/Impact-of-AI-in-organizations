@@ -1,0 +1,19 @@
+Structure of page for stracting the right elements on searching
+
+<main role=”main” class=”main”>
+    <div class="fr-container">
+        <div id="block-economie-content" class="block block-system block-system-main-block">
+            <div class="views-element-container">
+                <div class="view view-recherche-elasticsearch view-id-recherche_elasticsearch view display-id-	recherche_elasticsearch js-view-dom-	id 1748f77bebc3b6e27abcf49cdf1dec10176d9c95a2efb76352e04b232a247bae">
+                    <div class="view-content fr-grid-row fr-grid-row--gutters ">
+                        <div class="views-row"></div>
+                        <div class="views-row"></div>
+                        <div class="views-row"></div>
+                        <div class="views-row"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
