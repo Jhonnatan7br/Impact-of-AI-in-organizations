@@ -7,6 +7,8 @@
 - Text analysis Message: Batch request contains too many records. Max 10 records are permitted. (Create a cycle to iterate)
   https://language.cognitive.azure.com/tryout/namedEntities 
 - Topic Modeling with LSA, PLSA, LDA & lda2Vec (Also consider BERT)
+
+LDA Model: https://radimrehurek.com/gensim/models/ldamodel.html
 https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/bfd97b7b-2ee8-4d5e-8b6b-57ca89fc7d1e)
 - Based on Topic Modeling results, construct a financial analysis of companies that appear are most related to AI 

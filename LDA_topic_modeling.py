@@ -8,6 +8,7 @@ import pandas as pd
 from gensim import corpora
 from gensim.test.utils import common_texts
 from gensim.corpora.dictionary import Dictionary
+from gensim.models import LdaModel
 
 research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/scopus.csv")
 
