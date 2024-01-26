@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 
 # Function to scrape news articles from a Google search query
-def scrape_news(search_query, num_results=250):
+def scrape_news(search_query, num_results=100):
     articles = []
 
     # Perform a Google search and fetch the results
@@ -50,7 +50,7 @@ def create_and_save_csv(data):
 
 if __name__ == "__main__":
     # Enter your search query here
-    search_query = 'AI Business France (Only English)'
+    search_query = 'AI Business, Organizations, Economic and Finance France (Only English)'
 
     # Scrape news articles from the Google search
     news_data = scrape_news(search_query)
