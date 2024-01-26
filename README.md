@@ -96,8 +96,7 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
     - pip install annoy
     - pip install memory-profiler
     - pip install nltk
-    - pip install nmslib ***
-     
+    - pip install nmslib (previous requirement of C++ development tools)
     - pip install POT
     - pip install scikit-learn
     - pip install sphinx-gallery
@@ -105,6 +104,8 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
     - pip install sphinxcontrib-programoutput
     - pip install statsmodels
     - pip install testfixtures
+
+    - pip install gensim nltk pyLDAvis
 
     For better optimization with NumPy and OpenBLAS
     - pip install numpy --only-binary :numpy: numpy
