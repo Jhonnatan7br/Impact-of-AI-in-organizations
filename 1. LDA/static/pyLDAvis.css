@@ -1,0 +1,22 @@
+/* Custom CSS for LDA Visualization */
+
+/* Body style */
+body {
+    background-color: #171c28;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading style */
+h1 {
+    color: #33aaff;
+}
+
+/* Visualization container style */
+#lda-vis {
+    background-color: #11151f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Customize other elements as needed */

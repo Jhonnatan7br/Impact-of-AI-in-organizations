@@ -23,7 +23,7 @@ import pyLDAvis
 research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/scopus.csv")
 
 # Create a sub-dataset with the first 10 lines
-sub_dataset = research.head(1000)
+sub_dataset = research.head(10)
 # Extract descriptions from the 'description' column of the dataframe
 text_corpus = sub_dataset['Abstract'].tolist()
 text_corpus = [f'"{doc}"' for doc in text_corpus]
@@ -72,3 +72,13 @@ pyLDAvis.display(vis_data)
 
 #%%
 
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def display_lda():
+    return render_template('LDA_interface.html', vis_data=vis_data)
+
+if __name__ == '__main__':
+    app.run(debug=True)

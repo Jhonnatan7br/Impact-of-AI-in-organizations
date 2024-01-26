@@ -107,6 +107,7 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
 
     - pip install gensim nltk pyLDAvis
     - pip install gensim nltk matplotlib
+    - pip install Flask
 
 
     For better optimization with NumPy and OpenBLAS
