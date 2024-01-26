@@ -60,6 +60,49 @@ lda = LdaModel(corpus, num_topics=10)
 lda_model = LdaModel(corpus, num_topics=2, id2word=dictionary, passes=15)
 #lda = models.LdaModel(corpus, num_topics=10)
 
+
+#%%
+
+documents = [
+    "Machine learning is a subset of artificial intelligence.",
+    "Natural language processing is important in NLP tasks.",
+    "Topic modeling is a technique for discovering hidden topics.",
+    "Gensim is a Python library for natural language processing.",
+    "Latent Dirichlet Allocation is an unsupervised learning algorithm.",
+]
+
+import gensim
+from gensim import corpora
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+import string
+
+# Tokenize and preprocess the documents
+stop_words = set(stopwords.words('english'))
+translator = str.maketrans('', '', string.punctuation)
+
+tokenized_documents = []
+for doc in documents:
+    tokens = word_tokenize(doc.lower())  # Tokenize and convert to lowercase
+    tokens = [token for token in tokens if token not in stop_words]  # Remove stopwords
+    tokens = [token.translate(translator) for token in tokens]  # Remove punctuation
+    tokenized_documents.append(tokens)
+
+# Create a dictionary and a document-term matrix
+dictionary = corpora.Dictionary(tokenized_documents)
+corpus = [dictionary.doc2bow(doc) for doc in tokenized_documents]
+
+
+# Train the LDA model
+lda_model = gensim.models.LdaModel(corpus, num_topics=2, id2word=dictionary, passes=15)
+
+
+import pyLDAvis.gensim_models as gensimvis
+import pyLDAvis
+
 # Create a visualization
-vis = gensimvis.prepare(lda, corpus, dictionary)
-pyLDAvis.display(vis)
+vis_data = gensimvis.prepare(lda_model, corpus, dictionary)
+pyLDAvis.display(vis_data)
+
+
+# %%

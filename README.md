@@ -106,6 +106,8 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
     - pip install testfixtures
 
     - pip install gensim nltk pyLDAvis
+    - pip install gensim nltk matplotlib
+
 
     For better optimization with NumPy and OpenBLAS
     - pip install numpy --only-binary :numpy: numpy
