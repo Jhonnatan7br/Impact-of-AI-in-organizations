@@ -4,8 +4,13 @@
 
 ### To Solve or TO DO
 
+- I have a problem, when I analyse a lot of documents the model interpretate gramatical connnectors such as (and, the, is , with, etc) and propose them as topics, but it is not true, tell me strategies to manage it and to really estract the topics and concepts that would matter
+    - Stopword removal: Remove common words such as “and”, “the”, “is”, “with”, etc. from the documents before training the LDA model. This can be done using libraries such as NLTK or spaCy.
+    - Part-of-speech (POS) filtering: Filter out words based on their part-of-speech tags. For example, you can remove all words that are tagged as determiners, conjunctions, prepositions, etc. This can be done using libraries such as spaCy.
+
 - Text analysis Message: Batch request contains too many records. Max 10 records are permitted. (Create a cycle to iterate)
   https://language.cognitive.azure.com/tryout/namedEntities 
+
 - Topic Modeling with LSA, PLSA, LDA & lda2Vec (Also consider BERT)
 
 LDA Model: https://radimrehurek.com/gensim/models/ldamodel.html
