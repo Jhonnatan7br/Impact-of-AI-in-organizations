@@ -60,8 +60,17 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
     - Access the environment variables
         endpoint = os.getenv("AZURE_TEXT_ANALYSIS_ENDPOINT")
         key = os.getenv("AZURE_TEXT_ANALYSIS_KEY")    
+        
+- Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
 
-- Required Libraries
+      Dependence list: ['pybind11<2.6.2', 'psutil', "numpy>=1.10.0,<1.17 ; python_version=='2.7'", "numpy>=1.10.0 ; python_version>='3.5'"]     
+      running bdist_wheel
+      running build
+      running build_ext
+      Extra compilation arguments: ['/EHsc', '/openmp', '/O2', '/DVERSION_INFO=\\"2.1.1\\"']    
+      building 'nmslib' extension
+
+- Required python Libraries
     # For Webscrapping
     - pip install matplotlib
     - pip install wordcloud
