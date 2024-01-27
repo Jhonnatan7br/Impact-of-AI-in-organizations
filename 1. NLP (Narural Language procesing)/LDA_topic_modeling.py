@@ -1,3 +1,5 @@
+"""LDA Model: Prepare requirements described on README.md file, Topic Modeling Gensim file and official documentation disposed throught this project"""
+
 #%%
 # https://radimrehurek.com/gensim/models/ldamodel.html
 #Document: some text.
@@ -98,3 +100,23 @@ for topic_number, topic in lda_model.print_topics(num_topics=10, num_words=10):
 # Create a visualization
 vis_data = gensimvis.prepare(lda_model, corpus, dictionary)
 pyLDAvis.display(vis_data)
+
+#%%
+
+# Print LDA Topic Modeling vector
+topics = lda_model.print_topics(num_words=10)
+for topic in topics:
+    print(topic)
+
+#%%
+    
+# Generate human-readable topic names
+# Iterate through each topic
+for topic_number, topic in lda_model.print_topics(num_topics=10, num_words=10):
+    # Extract words and their weights
+    words = topic.split('+')
+    # Remove the weights and keep only the words
+    words = [word.split('*')[1].replace('"', '').strip() for word in words]
+    # Create a readable string for each topic
+    topic_str = ", ".join(words)
+    print(f"Topic {topic_number}: {topic_str}")

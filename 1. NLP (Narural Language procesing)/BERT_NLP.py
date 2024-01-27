@@ -1,25 +1,43 @@
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification, AdamW
 from torch.utils.data import DataLoader, TensorDataset
+from sklearn.model_selection import train_test_split
+import pandas as pd
 
 # Load pre-trained BERT model and tokenizer
 model_name = "bert-base-uncased"
 tokenizer = BertTokenizer.from_pretrained(model_name)
+num_categories = 3  # Replace with the actual number of categories in your dataset
 model = BertForSequenceClassification.from_pretrained(model_name, num_labels=num_categories)
 
-# Tokenize and preprocess your dataset
-# Assuming you have a list of abstracts (texts) and their corresponding labels (categories)
-texts = ["Your abstracts go here"]
-labels = [0, 1, 2]  # Replace with your actual labels
+# Assuming there is a list of abstracts (texts) and their corresponding labels (categories)
+research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/scopus.csv")
 
-# Tokenize and convert to tensors
+# If 'Label' is not available, replace it with your actual label column name
+sub_dataset = research.head(5251)
+text_corpus = sub_dataset['Abstract'].tolist()
+
+# Create an empty list to store the labels
+labels = ['technology','medicine','energy']
+# Convert labels list to a pandas Series and assign it to the 'Label' column in sub_dataset
+sub_dataset['Label'] = pd.Series(labels)
+#labels = sub_dataset['Label'].tolist()
+
+# Initialize empty lists to store tokenized input and attention masks
 input_ids = []
 attention_masks = []
-for text in texts:
-    encoding = tokenizer(text, truncation=True, padding=True, max_length=128, return_tensors='pt')
+
+# Define a maximum sequence length
+max_length = 128  # You can adjust this value based on your needs
+
+# Tokenize and preprocess your dataset
+for text in text_corpus:
+    encoding = tokenizer(text, truncation=True, padding='max_length', max_length=max_length, return_tensors='pt')
     input_ids.append(encoding['input_ids'])
     attention_masks.append(encoding['attention_mask'])
 
+# Now, all sequences will have the same length of 'max_length'
+# You can concatenate the tensors without any issues
 input_ids = torch.cat(input_ids, dim=0)
 attention_masks = torch.cat(attention_masks, dim=0)
 labels = torch.tensor(labels)

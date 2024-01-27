@@ -102,6 +102,10 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
         pip install azure-identity
         pip install python-dotenv
 
+    ### For BERT transformers with pytorch
+        pip install torch
+        pip install transformers torch
+
     #### For Topic Modeling 
         pip install --upgrade gensim
         pip install Pyro4
