@@ -11,27 +11,37 @@ from gensim import corpora, models
 from gensim.test.utils import common_texts
 from gensim.corpora.dictionary import Dictionary
 from gensim.models import LdaModel
-
-from nltk.corpus import stopwords
 import pyLDAvis.gensim_models as gensimvis
 import pyLDAvis
-import matplotlib.pyplot as plt
 
+from nltk.corpus import stopwords
+import nltk
+nltk.download('stopwords')
+
+import spacy
+nlp = spacy.load('en_core_web_sm')
+
+
+import matplotlib.pyplot as plt
 import pyLDAvis.gensim_models as gensimvis
 import pyLDAvis
 
 research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/scopus.csv")
 
 # Create a sub-dataset with the first 10 lines
-sub_dataset = research.head(10)
+sub_dataset = research.head(5817)
 # Extract descriptions from the 'description' column of the dataframe
 text_corpus = sub_dataset['Abstract'].tolist()
 text_corpus = [f'"{doc}"' for doc in text_corpus]
 
-# Create a set of frequent words
-stoplist = set('for a of the and to in'.split(' '))
+# Create a set of stopwords (set of frequent words):
+#stop_words = set(stopwords.words('english'))  # nltk stopwords in english for English 
+stop_words = set(nlp.Defaults.stop_words)
+# Building set of stop_words manually
+#stoplist = set('for a of the and to in'.split(' '))
+
 # Lowercase each document, split it by white space and filter out stopwords
-texts = [[word for word in document.lower().split() if word not in stoplist]
+texts = [[word for word in document.lower().split() if word not in stop_words]
          for document in text_corpus]
 
 # Count word frequencies
@@ -70,6 +80,9 @@ lda_model = LdaModel(corpus, num_topics=10, id2word=dictionary, passes=15)
 vis_data = gensimvis.prepare(lda_model, corpus, dictionary)
 pyLDAvis.display(vis_data)
 
+#%%
+
+
 """I understand that you are facing issues with your LDA model, where it is interpreting grammatical connectors as topics. This is a common problem in topic modeling, and there are several strategies that you can use to address it. Here are some suggestions:
 
 1. **Stopword removal**: Remove common words such as "and", "the", "is", "with", etc. from the documents before training the LDA model. This can be done using libraries such as NLTK or spaCy.
@@ -89,7 +102,8 @@ Source: Conversation with Bing, 26/1/2024
 (2) Linear Discriminant Analysis For Quantitative Portfolio Management. https://blog.quantinsti.com/linear-discriminant-analysis-quantitative-portfolio-management/.
 (3) Latent Dirichlet allocation (LDA) and topic modeling: models .... https://link.springer.com/article/10.1007/s11042-018-6894-4."""
 
-#%%
+# INTERFACE
+
 """
 from flask import Flask, render_template
 

@@ -25,7 +25,9 @@ Aim of subjec, experiemnts & diagram
 ### Data
 - Research about AI & business on France
     - Articles, researching, books, and more founded on scopus advanced searching, building a Dataset with all the metadata of different sources
-    - URL: 
+    - URL: https://www.scopus.com/standard/marketing.uri
+    - Query: 
+        ( TITLE-ABS-KEY ( ai ) AND ALL ( business ) OR ALL ( organization ) OR ALL ( enterprise ) OR ALL ( work ) OR ALL ( profession ) OR ALL ( career ) OR ALL ( affair ) OR ALL ( occupation ) OR ALL ( report ) OR ALL ( market ) OR ALL ( invest ) OR ALL ( trade ) OR ALL ( industry ) OR ALL ( company ) OR ALL ( commerce ) OR ALL ( dealing ) OR ALL ( firm ) OR ALL ( purchase ) OR ALL ( survey ) OR ALL ( manager ) OR ALL ( manage ) OR ALL ( decision ) OR ALL ( digital ) OR ALL ( task ) OR ALL ( automate ) OR ALL ( processes ) OR ALL ( production ) OR ALL ( bot ) OR ALL ( data ) OR ALL ( selling ) OR ALL ( marketing ) OR ALL ( logistics ) OR ALL ( finance ) OR ALL ( fabricate ) OR ALL ( price ) OR ALL ( stock ) OR ALL ( network ) OR ALL ( resource ) OR ALL ( money ) OR ALL ( cash ) OR ALL ( credit ) OR ALL ( institution ) OR ALL ( smart ) OR ALL ( tech ) OR ALL ( case ) OR ALL ( trading ) OR ALL ( area ) OR ALL ( system ) ) AND ( LIMIT-TO ( AFFILCOUNTRY , "France" ) ) AND ( LIMIT-TO ( LANGUAGE , "English" ) )
 - French Gouvernment AI related economic information
     - Cases, projects, regulations and more related to AI on France, the source is the official site of government, and the dataset created was webscrapped
     - URL: https://www.economie.gouv.fr/recherche-resultat?search_api_views_fulltext=IA&page=0
@@ -42,7 +44,7 @@ Aim of subjec, experiemnts & diagram
 - Data Scientist vs size of Datasets
     - A group of 100 data scientists from France were interviewed between January 2016 and August 2016 to analyze the potential relationship between hardware and data set sizes. However, it is important to note that the sample size may not be representative of the entire population. Dataset obtained from Kagle
     - URL Kagle: https://www.kaggle.com/datasets/laurae2/data-scientists-vs-size-of-datasets/data
-- Financial impact
+- Financial impact on CAC40
     - According to the results obtained on previous experiments on this project and guided by topic modeling structure, it has been selected specific companies that are related to AI usecases on their internal processes to analyse how was the impact received. Dataset builded based on financial statements and open financial information 
     - URL: https://fr.finance.yahoo.com/             
 
@@ -79,8 +81,8 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
 
 - Required python Libraries
     # For Webscrapping
-    - pip install matplotlib
-    - pip install wordcloud
+        pip install matplotlib
+        pip install wordcloud
     - pip install bs4
     - pip install selenium
     - pip install webdriver_manager
@@ -109,7 +111,9 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
     - pip install sphinxcontrib-programoutput
     - pip install statsmodels
     - pip install testfixtures
-
+    - pip install spacy # For stop words
+    - python -m spacy download en_core_web_sm  # for English
+    - python -m spacy download fr_core_news_sm $ for French
     - pip install gensim nltk pyLDAvis
     - pip install gensim nltk matplotlib
     - pip install Flask
