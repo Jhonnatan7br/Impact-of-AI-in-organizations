@@ -4,10 +4,6 @@
 
 ### To Solve or TO DO
 
-- I have a problem, when I analyse a lot of documents the model interpretate gramatical connnectors such as (and, the, is , with, etc) and propose them as topics, but it is not true, tell me strategies to manage it and to really estract the topics and concepts that would matter
-    - Stopword removal: Remove common words such as “and”, “the”, “is”, “with”, etc. from the documents before training the LDA model. This can be done using libraries such as NLTK or spaCy.
-    - Part-of-speech (POS) filtering: Filter out words based on their part-of-speech tags. For example, you can remove all words that are tagged as determiners, conjunctions, prepositions, etc. This can be done using libraries such as spaCy.
-
 - Text analysis Message: Batch request contains too many records. Max 10 records are permitted. (Create a cycle to iterate)
   https://language.cognitive.azure.com/tryout/namedEntities 
 
@@ -16,6 +12,7 @@
 LDA Model: https://radimrehurek.com/gensim/models/ldamodel.html
 https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/bfd97b7b-2ee8-4d5e-8b6b-57ca89fc7d1e)
+
 - Based on Topic Modeling results, construct a financial analysis of companies that appear are most related to AI 
 
 # Explanaiton of resources, process and requirements
@@ -28,7 +25,6 @@ Aim of subjec, experiemnts & diagram
     - URL: https://www.scopus.com/standard/marketing.uri
 
         query = ( TITLE-ABS-KEY ( ai ) AND ALL ( business ) OR ALL ( organization ) OR ALL ( enterprise ) OR ALL ( work ) OR ALL ( profession ) OR ALL ( career ) OR ALL ( affair ) OR ALL ( occupation ) OR ALL ( report ) OR ALL ( market ) OR ALL ( invest ) OR ALL ( trade ) OR ALL ( industry ) OR ALL ( company ) OR ALL ( commerce ) OR ALL ( dealing ) OR ALL ( firm ) OR ALL ( purchase ) OR ALL ( survey ) OR ALL ( manager ) OR ALL ( manage ) OR ALL ( decision ) OR ALL ( digital ) OR ALL ( task ) OR ALL ( automate ) OR ALL ( processes ) OR ALL ( production ) OR ALL ( bot ) OR ALL ( data ) OR ALL ( selling ) OR ALL ( marketing ) OR ALL ( logistics ) OR ALL ( finance ) OR ALL ( fabricate ) OR ALL ( price ) OR ALL ( stock ) OR ALL ( network ) OR ALL ( resource ) OR ALL ( money ) OR ALL ( cash ) OR ALL ( credit ) OR ALL ( institution ) OR ALL ( smart ) OR ALL ( tech ) OR ALL ( case ) OR ALL ( trading ) OR ALL ( area ) OR ALL ( system ) ) AND ( LIMIT-TO ( AFFILCOUNTRY , "France" ) ) AND ( LIMIT-TO ( LANGUAGE , "English" ) )
-        data = scrape.(query)
 
 - French Gouvernment AI related economic information
     - Cases, projects, regulations and more related to AI on France, the source is the official site of government, and the dataset created was webscrapped
