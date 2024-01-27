@@ -86,7 +86,7 @@ for topic in topics:
     print(topic)
 # Generate human-readable topic names
 # Iterate through each topic
-for topic_number, topic in lda_model.print_topics(num_topics=5, num_words=10):
+for topic_number, topic in lda_model.print_topics(num_topics=10, num_words=10):
     # Extract words and their weights
     words = topic.split('+')
     # Remove the weights and keep only the words
