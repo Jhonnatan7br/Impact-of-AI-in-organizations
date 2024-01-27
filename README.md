@@ -12,7 +12,9 @@
 LDA Model: https://radimrehurek.com/gensim/models/ldamodel.html
 https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05
 
-IMAGE
+
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/b92b74ad-b837-48ba-8c7e-a27d669ff65a)
+
 
 - Based on Topic Modeling results, construct a financial analysis of companies that appear are most related to AI 
 
