@@ -48,7 +48,7 @@ Aim of subjec, experiemnts & diagram
     - According to the results obtained on previous experiments on this project and guided by topic modeling structure, it has been selected specific companies that are related to AI usecases on their internal processes to analyse how was the impact received. Dataset builded based on financial statements and open financial information 
     - URL: https://fr.finance.yahoo.com/             
 
-### Main conclusions
+## Main conclusions
 
 It could be made a BigData analysis of news with webscrapping, but it could be necesary more computational power, and optimal connection and latency to wifi and certain budget on Azure API of text analysis to analyze more data  
 
@@ -121,3 +121,5 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
     #### For better optimization with NumPy and OpenBLAS on the NLP with topic modeling
         pip install numpy --only-binary :numpy: numpy
         pip install numpy --no-binary numpy
+
+### References: disposed on the file 'references.txt'
