@@ -22,7 +22,7 @@ https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65
 
 Aim of subjec, experiemnts & diagram
 
-### Data
+## Data
 - Research about AI & business on France
     - Articles, researching, books, and more founded on scopus advanced searching, building a Dataset with all the metadata of different sources
     - URL: https://www.scopus.com/standard/marketing.uri
@@ -52,7 +52,7 @@ Aim of subjec, experiemnts & diagram
 
 It could be made a BigData analysis of news with webscrapping, but it could be necesary more computational power, and optimal connection and latency to wifi and certain budget on Azure API of text analysis to analyze more data  
 
-### Principal processes and requirements (AZURE, webscrapping, libraries, etc)
+## Principal processes and requirements (AZURE, webscrapping, libraries, etc)
 
 - Topic modeling documentation: https://github.com/piskvorky/gensim?tab=readme-ov-file
 
@@ -80,45 +80,44 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
       building 'nmslib' extension
 
 - Required python Libraries
-    # For Webscrapping
+    #### For Webscrapping
         pip install matplotlib
         pip install wordcloud
-    - pip install bs4
-    - pip install selenium
-    - pip install webdriver_manager
-    - pip install undetected_chromedriver
-    - pip install requests beautifulsoup4
-    - pip install googlesearch-python
-    - pip install streamlit
+        pip install bs4
+        pip install selenium
+        pip install webdriver_manager
+        pip install undetected_chromedriver
+        pip install requests beautifulsoup4
+        pip install googlesearch-python
+        pip install streamlit
 
-    # For Azure and other API's connection
-    - pip install azure-ai-textanalytics
-    - pip install azure-identity
-    - pip install python-dotenv
+    #### For Azure and other API's connection
+        pip install azure-ai-textanalytics
+        pip install azure-identity
+        pip install python-dotenv
 
-    # For Topic Modeling 
-    - pip install --upgrade gensim
-    - pip install Pyro4
-    - pip install Sphinx
-    - pip install annoy
-    - pip install memory-profiler
-    - pip install nltk
-    - pip install nmslib (previous requirement of C++ development tools)
-    - pip install POT
-    - pip install scikit-learn
-    - pip install sphinx-gallery
-    - pip install sphinxcontrib-napoleon
-    - pip install sphinxcontrib-programoutput
-    - pip install statsmodels
-    - pip install testfixtures
-    - pip install spacy # For stop words
-    - python -m spacy download en_core_web_sm  # for English
-    - python -m spacy download fr_core_news_sm $ for French
-    - pip install gensim nltk pyLDAvis
-    - pip install gensim nltk matplotlib
-    - pip install Flask
+    #### For Topic Modeling 
+        pip install --upgrade gensim
+        pip install Pyro4
+        pip install Sphinx
+        pip install annoy
+        pip install memory-profiler
+        pip install nltk
+        pip install nmslib (previous requirement of C++ development tools)
+        pip install POT
+        pip install scikit-learn
+        pip install sphinx-gallery
+        pip install sphinxcontrib-napoleon
+        pip install sphinxcontrib-programoutput
+        pip install statsmodels
+        pip install testfixtures
+        pip install spacy # For stop words
+        python -m spacy download en_core_web_sm  # for English
+        python -m spacy download fr_core_news_sm $ for French
+        pip install gensim nltk pyLDAvis
+        pip install gensim nltk matplotlib
+        pip install Flask
 
-
-    For better optimization with NumPy and OpenBLAS
-    - pip install numpy --only-binary :numpy: numpy
-    - pip install numpy --no-binary numpy
+    #### For better optimization with NumPy and OpenBLAS on the NLP with topic modeling
+        pip install numpy --only-binary :numpy: numpy
+        pip install numpy --no-binary numpy
