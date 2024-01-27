@@ -12,10 +12,6 @@
 LDA Model: https://radimrehurek.com/gensim/models/ldamodel.html
 https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65b0b05
 
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/b92b74ad-b837-48ba-8c7e-a27d669ff65a)
-
-
 - Based on Topic Modeling results, construct a financial analysis of companies that appear are most related to AI 
 
     Topics - Industries - Enterprises CAC40 - There is a correlation between the increase of research on certain fields and industries and the increase of value of companies on the same industry?
@@ -23,6 +19,11 @@ https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65
 # Explanaiton of resources, process and requirements
 
 Aim of subjec, experiemnts & diagram
+
+First, it was trained and used an NLP (Natural Language Processing model to analyze research, articles, governmental and news information, there were used LDA, LSA and BERT machine learning models
+
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/db46d0e8-0e3e-49c8-96d0-8c7764a8d91e)
+
 
 ## Data
 - Research about AI & business on France
