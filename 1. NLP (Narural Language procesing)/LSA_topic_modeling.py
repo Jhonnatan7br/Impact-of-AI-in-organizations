@@ -4,8 +4,7 @@ from gensim import corpora, models
 from gensim.corpora.dictionary import Dictionary
 from gensim.models import LsiModel
 from gensim.test.utils import common_texts
-import pyLDAvis.gensim_models as gensimvis
-import pyLDAvis
+
 
 # Read your CSV file
 research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/scopus.csv")
