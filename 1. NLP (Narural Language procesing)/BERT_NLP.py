@@ -1,3 +1,8 @@
+""" BERT Model: All requirements and optimization is defined on Pytorch and hugging face official documentation"""
+
+Hugging_face_BERT_documentation = 'https://huggingface.co/docs/transformers/model_doc/bert'
+Pytorch_transformers = 'https://pytorch.org/hub/huggingface_pytorch-transformers/'
+
 #%%
 import torch
 from torch.utils.data import TensorDataset, DataLoader
@@ -10,7 +15,8 @@ from sklearn.preprocessing import LabelEncoder
 import torch.nn.functional as F
 import numpy as np
 
-# Load pre-trained BERT model and tokenizer
+""" Load pre-trained BERT model and tokenizer """
+
 model_name = "bert-base-uncased"
 tokenizer = BertTokenizer.from_pretrained(model_name)
 num_categories = 3  # Replace with the actual number of categories in your dataset
@@ -29,7 +35,7 @@ labels = ['technology','medicine','energy']
 sub_dataset['Label'] = pd.Series(labels)
 #labels = sub_dataset['Label'].tolist()
 #%%
-
+""" Tokenizing preprocesed Data"""
 # Initialize empty lists to store tokenized input and attention masks
 input_ids = []
 attention_masks = []
@@ -44,6 +50,7 @@ for text in text_corpus:
     attention_masks.append(encoding['attention_mask'])
 #%%
 
+"""Encoding Labels"""
 # Initialize the LabelEncoder
 
 label_encoder = LabelEncoder()
@@ -63,7 +70,7 @@ labels_tensor = torch.tensor(expanded_labels)
 # Ensure the shape of the labels matches the number of rows in your input data
 assert labels_tensor.shape[0] == num_sequences
 #%%
-
+""" Procesing Encoding labels on the Tensor (It has to had the same size as attention_mask and input_ids)"""
 labels = torch.tensor(encoded_labels)
 
 # Find the maximum sequence length in input_ids and attention_masks
@@ -88,6 +95,8 @@ optimizer = AdamW(model.parameters(), lr=1e-5)
 loss_fn = torch.nn.CrossEntropyLoss()
 
 #%%
+
+"""Training BERT Model"""
 # Training loop
 num_epochs = 1 # Augment epochs to gain efficiency on the model
 for epoch in range(num_epochs):
@@ -104,3 +113,54 @@ for epoch in range(num_epochs):
 # You can use a similar data loader setup as above and compute metrics like accuracy.
 
 # %%
+        
+""" Save important variables, tensor information and dataset on the cache """
+import os
+import torch
+import numpy as np
+import pickle
+
+# Define the cache directory
+cache_dir = 'C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/1. NLP (Narural Language procesing)/cache '  # Change this to the actual path on your machine
+
+# Create the cache directory if it doesn't exist
+os.makedirs(cache_dir, exist_ok=True)
+
+# Define file paths
+expanded_labels_path = os.path.join(cache_dir, 'expanded_labels.npy')
+input_ids_path = os.path.join(cache_dir, 'input_ids.pt')
+labels_tensor_path = os.path.join(cache_dir, 'labels_tensor.pt')
+labels_path = os.path.join(cache_dir, 'labels.pkl')
+
+# Save the expanded_labels as a NumPy file
+np.save(expanded_labels_path, expanded_labels)
+
+# Save the input_ids as a PyTorch file (assuming it's a list of tensors)
+torch.save(input_ids, input_ids_path)
+
+# Save the labels_tensor as a PyTorch file
+torch.save(labels_tensor, labels_tensor_path)
+
+# Save the labels using pickle
+with open(labels_path, 'wb') as f:
+    pickle.dump(labels, f)
+
+#%%
+"""Save the model"""
+
+from transformers import BertForSequenceClassification
+
+# Assuming `model` is an instance of BertForSequenceClassification and is already trained
+# ...
+
+# Define the model directory path
+models_dir = 'C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/1. NLP (Narural Language procesing)/models'
+
+# Create the models directory if it doesn't exist
+os.makedirs(models_dir, exist_ok=True)
+
+# Save the trained model
+model.save_pretrained(models_dir)
+
+# The model's configuration and weights will be saved in the 'models' directory.
+# You will find files like `config.json` and `pytorch_model.bin` there.
