@@ -1,11 +1,14 @@
 """LDA Model: Prepare requirements described on README.md file, Topic Modeling Gensim file and official documentation disposed throught this project"""
 
 #%%
-# https://radimrehurek.com/gensim/models/ldamodel.html
+LDA_documentation = 'https://radimrehurek.com/gensim/models/ldamodel.html'
+
+Key_concepts = [
 #Document: some text.
 #Corpus: a collection of documents.
 #Vector: a mathematically convenient representation of a document.
 #Model: an algorithm for transforming vectors from one representation to another.
+]
 
 import pprint
 import pandas as pd
@@ -22,15 +25,12 @@ nltk.download('stopwords')
 
 import spacy
 nlp = spacy.load('en_core_web_sm')
-
-{'word1','word2','word3'}
-
 import matplotlib.pyplot as plt
 import pyLDAvis.gensim_models as gensimvis
 import pyLDAvis
 
-research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/scopus.csv")
 
+research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/scopus.csv")
 # Create a sub-dataset with the first 10 lines
 sub_dataset = research.head(5251)
 # Extract descriptions from the 'description' column of the dataframe

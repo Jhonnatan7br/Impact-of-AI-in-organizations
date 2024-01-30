@@ -1,5 +1,7 @@
 #%%
 import torch
+from torch.utils.data import TensorDataset, DataLoader
+from transformers import AdamW
 from transformers import BertTokenizer, BertForSequenceClassification, AdamW
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
@@ -42,12 +44,6 @@ for text in text_corpus:
     attention_masks.append(encoding['attention_mask'])
 #%%
 
-# Now, all sequences will have the same length of 'max_length'
-# You can concatenate the tensors without any issues
-# input_ids = torch.cat(input_ids, dim=0)
-# attention_masks = torch.cat(attention_masks, dim=0)
-# Repeat each label for the corresponding number of sequences
-
 # Initialize the LabelEncoder
 
 label_encoder = LabelEncoder()
@@ -55,8 +51,10 @@ label_encoder = LabelEncoder()
 # Fit the encoder on the labels and transform the labels into numerical values
 encoded_labels = label_encoder.fit_transform(labels)
 
+# Get the number of sequences from the length of the input_ids list
+num_sequences = len(input_ids)
+
 # Generate labels for your input data by repeating the encoded labels
-num_sequences = input_ids.size(0)
 expanded_labels = np.tile(encoded_labels, num_sequences // len(labels) + 1)[:num_sequences]
 
 # Convert the numerical labels to a PyTorch tensor
@@ -66,16 +64,19 @@ labels_tensor = torch.tensor(expanded_labels)
 assert labels_tensor.shape[0] == num_sequences
 #%%
 
-labels = torch.tensor(labels)
+labels = torch.tensor(encoded_labels)
 
 # Find the maximum sequence length in input_ids and attention_masks
-max_length = max(input_ids.size(0), attention_masks.size(0))
+max_length = max(len(input_ids), len(attention_masks))
 
 # Pad the shorter tensor to match the maximum length
-if input_ids.size(0) < max_length:
-    input_ids = F.pad(input_ids, (0, 0, 0, max_length - input_ids.size(0)))
-elif attention_masks.size(0) < max_length:
-    attention_masks = F.pad(attention_masks, (0, 0, 0, max_length - attention_masks.size(0)))
+# Assuming input_ids and attention_masks are lists of tensors
+input_ids = [F.pad(seq, (0, 0, 0, max_length - seq.size(0))) for seq in input_ids]
+attention_masks = [F.pad(mask, (0, 0, 0, max_length - mask.size(0))) for mask in attention_masks]
+
+# Convert lists of tensors to a single tensor
+input_ids = torch.stack(input_ids)
+attention_masks = torch.stack(attention_masks)
 
 # Create data loaders or tensor dataset
 dataset = TensorDataset(input_ids, attention_masks, labels)
