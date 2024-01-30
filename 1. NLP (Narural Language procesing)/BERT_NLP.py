@@ -71,25 +71,51 @@ labels_tensor = torch.tensor(expanded_labels)
 assert labels_tensor.shape[0] == num_sequences
 #%%
 """ Procesing Encoding labels on the Tensor (It has to had the same size as attention_mask and input_ids)"""
-labels = torch.tensor(encoded_labels)
-
-# Find the maximum sequence length in input_ids and attention_masks
-max_length = max(len(input_ids), len(attention_masks))
-
-# Pad the shorter tensor to match the maximum length
 # Assuming input_ids and attention_masks are lists of tensors
-input_ids = [F.pad(seq, (0, 0, 0, max_length - seq.size(0))) for seq in input_ids]
-attention_masks = [F.pad(mask, (0, 0, 0, max_length - mask.size(0))) for mask in attention_masks]
+# Calculate the lengths of each sequence
+sequence_lengths = [len(seq) for seq in input_ids]
 
-# Convert lists of tensors to a single tensor
+# Sort the input sequences by length in descending order
+sorted_indices = sorted(range(len(sequence_lengths)), key=lambda i: sequence_lengths[i], reverse=True)
+
+# Filter out any indices that are out of range
+sorted_indices = [i for i in sorted_indices if i < len(input_ids)]
+
+# Reorder input_ids, attention_masks, and labels based on sorted_indices
+labels = torch.tensor(encoded_labels)
+input_ids = [input_ids[i] for i in sorted_indices]
+attention_masks = [attention_masks[i] for i in sorted_indices]
+
+# Create a mask for valid indices in sorted_indices
+valid_indices_mask = [i < len(encoded_labels) for i in sorted_indices]
+
+# Filter sorted_indices to contain only valid indices
+sorted_indices = [i for i, valid in zip(sorted_indices, valid_indices_mask) if valid]
+
+# Filter labels to contain only valid labels
+labels = encoded_labels[sorted_indices]
+
+# Debug: Print the lengths after reordering
+print("Input IDs Length (After Reordering):", len(input_ids))
+print("Attention Masks Length (After Reordering):", len(attention_masks))
+print("Labels Length (After Reordering):", len(labels))
+
+#%%
+"""Convert lists of tensors to a single tensor"""
 input_ids = torch.stack(input_ids)
 attention_masks = torch.stack(attention_masks)
 
-# Create data loaders or tensor dataset
-dataset = TensorDataset(input_ids, attention_masks, labels)
-batch_size = 16
-train_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
+tensor = torch.from_numpy(labels)
+# Repeat the values in the labels tensor to match the size of the other tensors
+tensor = tensor.repeat(input_ids.size()[0])
+# Unsqueeze the tensor tensor to match the dimensions of input_ids
+tensor1 = tensor.unsqueeze(1).unsqueeze(1)
+#%%
+""" Create data loaders or tensor dataset"""
+dataset = TensorDataset(input_ids, attention_masks, tensor1)
+batch_size = 32
+train_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
 # Define optimizer and loss function
 optimizer = AdamW(model.parameters(), lr=1e-5)
 loss_fn = torch.nn.CrossEntropyLoss()
