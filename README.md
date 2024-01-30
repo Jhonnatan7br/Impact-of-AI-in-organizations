@@ -2,6 +2,9 @@
 
 ### This repository is on construction
 
+Dataset connections
+![Alt text](image.png)
+
 ### To Solve or TO DO
 
 - Text analysis Message: Batch request contains too many records. Max 10 records are permitted. (Create a cycle to iterate)
