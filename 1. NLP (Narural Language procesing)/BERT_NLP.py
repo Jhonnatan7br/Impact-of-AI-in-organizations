@@ -111,6 +111,15 @@ tensor = torch.from_numpy(labels)
 tensor = tensor.repeat(input_ids.size()[0])
 # Unsqueeze the tensor tensor to match the dimensions of input_ids
 tensor1 = tensor.unsqueeze(1).unsqueeze(1)
+# USE A COPY OF TENSOR
+"""
+resulting in a tensor of shape 
+tensor.size()
+torch.Size([15753, 1, 1])
+
+It does not match with  input_ids of size
+torch.Size([5251, 1, 128])
+"""
 #%%
 """ Create data loaders or tensor dataset"""
 dataset = TensorDataset(input_ids, attention_masks, tensor1)
