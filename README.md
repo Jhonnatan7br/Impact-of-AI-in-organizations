@@ -3,7 +3,8 @@
 ### This repository is on construction
 
 Dataset connections
-![Alt text](image.png)
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d06dacbf-888c-4844-8695-c020f5adcb66)
+
 
 ### To Solve or TO DO
 
@@ -19,14 +20,36 @@ https://medium.com/nanonets/topic-modeling-with-lsa-psla-lda-and-lda2vec-555ff65
 
     Topics - Industries - Enterprises CAC40 - There is a correlation between the increase of research on certain fields and industries and the increase of value of companies on the same industry?
 
-# Explanaiton of resources, process and requirements
-
-Aim of subjec, experiemnts & diagram
+# Aim of subjec, experiemnts & diagram
 
 First, it was trained and used an NLP (Natural Language Processing model to analyze research, articles, governmental and news information, there were used LDA, LSA and BERT machine learning models
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/db46d0e8-0e3e-49c8-96d0-8c7764a8d91e)
 
+EXTRACTED TOPICS TABLE
+
+Taking into account that the impact and interest about use cases of AI is increasing, specially since 2018, it can be made the following graph to see this tendency (Scopus dataset)
+
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/65f3156f-370b-4602-95f4-34311a4d13fc)
+
+After that it was searched the relation between the topics founded and the data through statistical analysis
+
+Understanding this tendency to grow and starting to analyze official information documented by the government of France through 93 cases (FRgov dataset), it was applied a keyword frecuency statistic to meassure in wich industries it exist more cases and if it was correlation between the results of Topic Modeling
+
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d92a6272-abaa-41f3-889f-85fd1f5ab996)
+
+AI Tools dataset documented on the official framce Government databases 
+
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/6e9acf04-ecc3-4fd2-b607-26242906ed57)
+
+
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/7afdc492-65bf-478a-9bf7-2f7aa92111ff)
+
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/ee44dd05-daa6-41a3-bae8-3180de5ded20)
+
+XXX
+
+# Explanaiton of resources, process and requirements
 
 ## Data
 - Research about AI & business on France
@@ -135,4 +158,5 @@ It could be made a BigData analysis of news with webscrapping, but it could be n
         pip install numpy --only-binary :numpy: numpy
         pip install numpy --no-binary numpy
 
-### References: disposed on the file 'references.txt'
+>[!NOTE]
+>References: disposed on the file 'references.txt'
