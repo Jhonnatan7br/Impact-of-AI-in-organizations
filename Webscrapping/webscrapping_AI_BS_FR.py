@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 
 # Function to scrape news articles from a Google search query
-def scrape_news(search_query, num_results=100):
+def scrape_news(search_query, num_results=50):
     articles = []
 
     # Perform a Google search and fetch the results
