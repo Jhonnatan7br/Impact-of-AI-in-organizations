@@ -42,6 +42,7 @@ XXX
 # Explanaiton of resources, process, and requirements
 
 Dataset connections
+
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d06dacbf-888c-4844-8695-c020f5adcb66)
 
 ## Data
