@@ -7,10 +7,13 @@
 How organizations could be impacted by machine learning and AI?
 This question is particularly pertinent in the context of modern business management research, as it delves into a critical aspect of organizational dynamics in the face of advancing technologies. I've chosen to focus on the impact of machine learning and AI tools because they've already begun to reshape how work is organized within organizations, whether through the automation of routine tasks, augmentation of decision-making processes, or the emergence of entirely new roles and responsibilities centered around AI integration.
 
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/a27f9451-6ae9-4681-9f4b-ddfb0617176d)
-Dashboard Tableau Public: https://public.tableau.com/app/profile/jhonnatan.david.betancourt.rodriguez/viz/ImpactofAIinBusiness/Dashboard1?publish=yes
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/a7af70bf-7066-4832-9bd3-c495e66fc619)
+
+URL Dashboard Tableau Public: 
+https://public.tableau.com/app/profile/jhonnatan.david.betancourt.rodriguez/viz/ImpactofAIinBusiness/Dashboard1?publish=yes
 
 Dataset connections
+
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d06dacbf-888c-4844-8695-c020f5adcb66)
 
 First, it was trained and used an NLP (Natural Language Processing model to analyze research, articles, governmental and news information, there were used LDA, LSA, and BERT machine learning models
