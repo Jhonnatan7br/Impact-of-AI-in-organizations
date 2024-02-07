@@ -160,7 +160,7 @@ It could be made a BigData analysis of news with web scrapping, but it could be 
 ### To Solve or TO DO
 
 
-- Try BERT
+- Solve size of tensor of "Labels" on BERT
 - Build Azure features
     Text analysis Message: Batch request contains too many records. Max 10 records are permitted. (Create a cycle to iterate)
     https://language.cognitive.azure.com/tryout/namedEntities 
