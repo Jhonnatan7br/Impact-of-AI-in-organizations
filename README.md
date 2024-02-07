@@ -12,10 +12,6 @@ This question is particularly pertinent in the context of modern business manage
 URL Dashboard Tableau Public: 
 https://public.tableau.com/app/profile/jhonnatan.david.betancourt.rodriguez/viz/ImpactofAIinBusiness/Dashboard1?publish=yes
 
-Dataset connections
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d06dacbf-888c-4844-8695-c020f5adcb66)
-
 First, it was trained and used an NLP (Natural Language Processing model to analyze research, articles, governmental and news information, there were used LDA, LSA, and BERT machine learning models
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/db46d0e8-0e3e-49c8-96d0-8c7764a8d91e)
@@ -44,6 +40,9 @@ AI Tools dataset documented on the official framework Government databases
 XXX
 
 # Explanaiton of resources, process, and requirements
+
+Dataset connections
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d06dacbf-888c-4844-8695-c020f5adcb66)
 
 ## Data
 - Research about AI & business in France
