@@ -160,6 +160,11 @@ It could be made a BigData analysis of news with web scrapping, but it could be 
 
 ### To Solve or TO DO
 
+- Cleaning, lemmatization, bigram  
+    Coherence, perplexity, bow technique (Best topics, and optimal quantity of topics)
+- Analyse supplémentaires, statistics, tire de graph ou graph de mot clé
+    Measures de sémantique au donnes (Peut etre regression)
+    Sentiment analysis de marche, avec les sujets exposes pour le topic modeling
 
 - Solve size of tensor of "Labels" on BERT
 - Build Azure features

@@ -71,6 +71,7 @@ print(dictionary)
 
 # Convert the dictionary to a bag-of-words corpus for reference.
 corpus = [dictionary.doc2bow(text) for text in processed_corpus]
+# Concept similare
 
 """ Train an LDA model using a Gensim corpus """
 # Create a corpus from a list of texts
