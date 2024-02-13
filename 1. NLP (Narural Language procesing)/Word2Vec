@@ -40,3 +40,10 @@ model = Word2Vec.load("word2vec_model")
 # Get word vectors
 vector = model.wv['ai']  # Replace 'word1' with the word you want to get the vector for
 print(vector)
+
+
+# Create a DataFrame with a single column named 'Vector'
+df = pd.DataFrame({'Vector': vector})
+
+# Display the DataFrame
+print(df)
