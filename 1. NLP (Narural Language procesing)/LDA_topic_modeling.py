@@ -1,6 +1,5 @@
-"""LDA Model: Prepare requirements described on README.md file, Topic Modeling Gensim file and official documentation disposed throught this project"""
-
 #%%
+"""LDA Model: Prepare requirements described on README.md file, Topic Modeling Gensim file and official documentation disposed throught this project"""
 LDA_documentation = 'https://radimrehurek.com/gensim/models/ldamodel.html'
 
 Key_concepts = [
@@ -54,7 +53,7 @@ def get_lemma(token):
 #stop_words = set(stopwords.words('english'))  # nltk stopwords in english for English 
 stop_words = set(nlp.Defaults.stop_words)
 # Add manually another stop word to reduce model noise
-new_stop_words = {'&','=','de','springer-verlag','et','results','power','±','new','compared','data','smart','la','abstract','om','“no','available','set','problem','teatures','switzerland','berlin','ag.','≤','"we','"in','"this','ag."','ieee."','μ','-','z','w','author(s)."','siven','class','rights','general','cows','milk','relevant','reserved."','time','pattern','constraint','classiters','vve I','problems','consider','propositional','present','space','large','springer','prove','intake','la','©','found','ieee.','problem','features','given','p','(p)','knowledge','results','si','+','k','n','b','m','f','c','x','d','"[no','available]"','use','field','"The','provide','based','paper','propose','decision','2021','process','methods','paper,','however','number','studies','study','<','conclusion:','2','1','significant','included','total','(n','des','les','genetic','à','en','le','une','qui','du','associated','literature','review',',','intelligence','artificial', 'approach','proposed','intelligence','accuracy','parameters','group','methods:','results:','(p','low', 'different', 'higher', 'analysis', 'published', 'articles','coding', 'dans', 'un', 'video', 'se', 'que', 'pour', 'elsevier','automatic','levels', 'expression', 'increased', 'effect', 'days', 'high','however','index', 'significantly', 'af', 'function'}
+new_stop_words = {'&','⊆','=','≥','•','de','springer-verlag','et','results','power','±','new','compared','data','smart','la','archaeological','abstract','om','“no','available','set','problem','teatures','switzerland','berlin','ag.','≤','"we','"in','"this','ag."','ieee."','μ','-','z','w','author(s)."','siven','class','rights','general','cows','milk','relevant','reserved."','time','•','native', '1998', 'u', 'x-ray', 'v','pattern','constraint','classiters','vve I','problems','consider','propositional','present','space','large','springer','prove','intake','la','©','found','ieee.','problem','features','given','p','(p)','knowledge','results','si','+','k','n','b','m','f','c','x','d','"[no','available]"','use','field','"The','provide','based','paper','propose','decision','2021','process','methods','paper,','however','number','studies','study','<','conclusion:','2','1','significant','included','total','(n','des','les','genetic','à','en','le','une','qui','du','associated','literature','review',',','intelligence','artificial', 'approach','proposed','intelligence','accuracy','parameters','group','methods:','results:','(p','low', 'different', 'higher', 'analysis', 'published', 'articles','coding', 'dans', 'un', 'video', 'se', 'que', 'pour', 'elsevier','automatic','levels', 'expression', 'increased', 'effect', 'days', 'high','however','index', 'significantly', 'af', 'function'}
 # Add the new words to the existing set
 stop_words.update(new_stop_words)
 # Building set of stop_words manually
@@ -106,8 +105,8 @@ corpus = [dictionary.doc2bow(text) for text in processed_corpus]
 #%%
 """ Train an LDA model using a Gensim corpus """
 
-number_topics = 7
-number_words = 10
+number_topics = 8
+number_words = 12
 
 # Create a corpus from a list of texts
 common_dictionary = Dictionary(common_texts)
