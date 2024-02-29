@@ -4,6 +4,7 @@ Hugging_face_BERT_documentation = 'https://huggingface.co/docs/transformers/mode
 Pytorch_transformers = 'https://pytorch.org/hub/huggingface_pytorch-transformers/'
 
 #%%
+""" Load pre-trained BERT model and tokenizer """
 import torch
 from torch.utils.data import TensorDataset, DataLoader
 from transformers import AdamW
@@ -15,7 +16,7 @@ from sklearn.preprocessing import LabelEncoder
 import torch.nn.functional as F
 import numpy as np
 
-""" Load pre-trained BERT model and tokenizer """
+""" Load pre-trained BERT model and tokenizer, simulation with 5000 instances """
 
 model_name = "bert-base-uncased"
 tokenizer = BertTokenizer.from_pretrained(model_name)
@@ -26,11 +27,11 @@ model = BertForSequenceClassification.from_pretrained(model_name, num_labels=num
 research = pd.read_csv("C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets/scopus.csv")
 
 # If 'Label' is not available, replace it with your actual label column name
-sub_dataset = research.head(5251)
+sub_dataset = research.head(5000)
 text_corpus = sub_dataset['Abstract'].tolist()
 
 # Create an empty list to store the labels
-labels = ['technology','medicine','energy']
+labels = ['technology','business','management']
 # Convert labels list to a pandas Series and assign it to the 'Label' column in sub_dataset
 sub_dataset['Label'] = pd.Series(labels)
 #labels = sub_dataset['Label'].tolist()
@@ -41,7 +42,7 @@ input_ids = []
 attention_masks = []
 
 # Define a maximum sequence length
-max_length = 128  # You can adjust this value based on your needs
+max_length = 120  # You can adjust this value based on your needs
 
 # Tokenize and preprocess your dataset
 for text in text_corpus:
@@ -106,44 +107,81 @@ input_ids = torch.stack(input_ids)
 attention_masks = torch.stack(attention_masks)
 
 
-tensor = torch.from_numpy(labels)
-# Repeat the values in the labels tensor to match the size of the other tensors
-tensor = tensor.repeat(input_ids.size()[0])
-# Unsqueeze the tensor tensor to match the dimensions of input_ids
-tensor1 = tensor.unsqueeze(1).unsqueeze(1)
-# USE A COPY OF TENSOR
-"""
-resulting in a tensor of shape 
-tensor.size()
-torch.Size([15753, 1, 1])
+tensor_labels = torch.from_numpy(labels)
+# If labels is initially 1D and you want each label to be repeated 120 times to fill the (5000, 1, 120) shape,
+# you would first need to repeat each element 120 times, then reshape the tensor.
+# This example assumes you need to create 5000 * 120 total elements
 
-It does not match with  input_ids of size
-torch.Size([5251, 1, 128])
-"""
+# Calculate repeat times for each label to fit into the (5000, 1, 120) shape
+repeat_times = 5000 * 120 // tensor_labels.numel()
+
+# Repeat the tensor
+tensor_labels_repeated = tensor_labels.repeat_interleave(repeat_times)
+
+# Finally, reshape to get the (5000, 1, 120) shape
+tensor_labels1 = tensor_labels_repeated.reshape(5000, 1, 120)
+
+# Check the shape
+print("3 tensor sizes has to be equal")
+print('input size: ',input_ids.shape)
+print('attention size: ',attention_masks.shape)
+print('labels size: ',tensor_labels1.shape)
+
+# Work with a copy of tensors (For faster evaluation)
+
+input_ids2 = input_ids
+attention_masks2 = attention_masks
+tensor_labels2 = tensor_labels1
+
 #%%
 """ Create data loaders or tensor dataset"""
-dataset = TensorDataset(input_ids, attention_masks, tensor1)
-batch_size = 32
-train_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
+dataset = TensorDataset(input_ids2, attention_masks2, tensor_labels2)
+train_loader = DataLoader(dataset, shuffle=True)
 # Define optimizer and loss function
 optimizer = AdamW(model.parameters(), lr=1e-5)
 loss_fn = torch.nn.CrossEntropyLoss()
 
 #%%
 
-"""Training BERT Model"""
+"""Training BERT Model """
+# Training loop
+num_epochs = 1 # Augment epochs to gain efficiency on the model
+# Assuming each input sequence corresponds to a single label
+for epoch in range(num_epochs):
+    model.train()
+    for batch in train_loader:
+        optimizer.zero_grad()
+        
+        # Assuming batch contains tensors shaped as [5000, 1, 120]
+        input_ids, attention_mask, tensor_labels1 = batch
+        
+        # Adjusting tensor dimensions
+        # Squeezing the unnecessary dimension if your task is sequence classification
+        input_ids = input_ids.squeeze(1)  # Now [5000, 120]
+        attention_mask = attention_mask.squeeze(1)  # Now [5000, 120]
+        tensor_labels1 = tensor_labels1.squeeze(1)  # Assuming you adjust labels to be [5000], if applicable
+        
+        # Check if you need to adjust tensor_labels1 further to match expected shape for labels
+        
+        outputs = model(input_ids, attention_mask=attention_mask, labels=tensor_labels1)
+        loss = outputs.loss
+        loss.backward()
+        optimizer.step()
+
+
+"""
 # Training loop
 num_epochs = 1 # Augment epochs to gain efficiency on the model
 for epoch in range(num_epochs):
     model.train()
     for batch in train_loader:
         optimizer.zero_grad()
-        input_ids, attention_mask, labels = batch
-        outputs = model(input_ids, attention_mask=attention_mask, labels=labels)
+        input_ids, attention_mask, tensor_labels1 = batch
+        outputs = model(input_ids, attention_mask=attention_mask, labels=tensor_labels1)
         loss = outputs.loss
         loss.backward()
         optimizer.step()
-
+"""
 # Evaluate on the validation or test set
 # You can use a similar data loader setup as above and compute metrics like accuracy.
 

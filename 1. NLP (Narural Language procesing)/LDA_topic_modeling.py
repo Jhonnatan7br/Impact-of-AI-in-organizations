@@ -16,11 +16,20 @@ from gensim import corpora, models
 from gensim.test.utils import common_texts
 from gensim.corpora.dictionary import Dictionary
 from gensim.models import LdaModel
+
 import pyLDAvis.gensim_models as gensimvis
 import pyLDAvis
 from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+
 import nltk
+from nltk.stem.wordnet import WordNetLemmatizer
+from gensim.models import Phrases
+from gensim.models.phrases import Phraser
 nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('punkt')
+
 import spacy
 nlp = spacy.load('en_core_web_sm')
 import matplotlib.pyplot as plt
@@ -38,11 +47,14 @@ text_corpus = [f'"{doc}"' for doc in text_corpus]
 
 #%%
 """ Clean words matrix """
+
+def get_lemma(token):
+    return WordNetLemmatizer().lemmatize(token)
 # Create a set of stopwords (set of frequent words):
 #stop_words = set(stopwords.words('english'))  # nltk stopwords in english for English 
 stop_words = set(nlp.Defaults.stop_words)
 # Add manually another stop word to reduce model noise
-new_stop_words = {'&','=','de','control','model','system','et','results','power','±','new','compared','risk','data','smart','la','abstract','om','“no','available','set','problem','teatures','siven','class','rights','general','cows','milk','relevant','reserved."','time','pattern','constraint','classiters','vve I','problems','consider','propositional','logic','present','space','large','springer','prove','intake','la','©','found','problem','features','given','p','(p)','knowledge','results','si','d','"[no','available]"','use','field','"The','provide','based','paper','propose','decision','2021','process','methods','paper,','however','number','studies','study','<','conclusion:','2','1','significant','included','total','(n','des','les','genetic','à','en','le','une','qui','du','associated','literature','review',',','intelligence','artificial', 'approach','proposed','intelligence','accuracy','parameters','group','methods:','results:','(p','low', 'different', 'higher', 'analysis', 'published', 'articles','coding', 'dans', 'un', 'video', 'se', 'que', 'productivity', 'pour', 'elsevier','automatic','levels', 'expression', 'increased', 'effect', 'days', 'high','however','index', 'significantly', 'af', 'function'}
+new_stop_words = {'&','=','de','springer-verlag','et','results','power','±','new','compared','data','smart','la','abstract','om','“no','available','set','problem','teatures','switzerland','berlin','ag.','≤','"we','"in','"this','ag."','ieee."','μ','-','z','w','author(s)."','siven','class','rights','general','cows','milk','relevant','reserved."','time','pattern','constraint','classiters','vve I','problems','consider','propositional','present','space','large','springer','prove','intake','la','©','found','ieee.','problem','features','given','p','(p)','knowledge','results','si','+','k','n','b','m','f','c','x','d','"[no','available]"','use','field','"The','provide','based','paper','propose','decision','2021','process','methods','paper,','however','number','studies','study','<','conclusion:','2','1','significant','included','total','(n','des','les','genetic','à','en','le','une','qui','du','associated','literature','review',',','intelligence','artificial', 'approach','proposed','intelligence','accuracy','parameters','group','methods:','results:','(p','low', 'different', 'higher', 'analysis', 'published', 'articles','coding', 'dans', 'un', 'video', 'se', 'que', 'pour', 'elsevier','automatic','levels', 'expression', 'increased', 'effect', 'days', 'high','however','index', 'significantly', 'af', 'function'}
 # Add the new words to the existing set
 stop_words.update(new_stop_words)
 # Building set of stop_words manually
@@ -51,13 +63,34 @@ stop_words.update(new_stop_words)
 texts = [[word for word in document.lower().split() if word not in stop_words]
          for document in text_corpus]
 
+#%%
+"""Lemmatize, make bigram and trigram texts"""
+# Lemmatize function using WordNet Lemmatizer
+def lemmatize_text(text):
+    return [get_lemma(word) for word in text]
+# Tokenization
+tokenized_texts = [word_tokenize(doc.lower()) for doc in text_corpus]
+# Lemmatization
+lemmatized_texts = [lemmatize_text(tokens) for tokens in tokenized_texts]
+
+# Bigram and Trigram creation
+bigram = Phrases(lemmatized_texts, min_count=5, threshold=100)
+trigram = Phrases(bigram[lemmatized_texts], min_count=5, threshold=100)
+bigram_phraser = Phraser(bigram)
+trigram_phraser = Phraser(trigram)
+
+# Apply bigram and trigram models to texts
+bigram_texts = [bigram_phraser[text] for text in lemmatized_texts]
+trigram_texts = [trigram_phraser[bigram_phraser[text]] for text in lemmatized_texts]
+# Remove stopwords
+cleaned_texts = [[word for word in text if word not in stop_words] for text in trigram_texts]
 
 #%%
-""" Build frame of words to being processed on LDA"""
+""" Tokenize and Build frame of words to being processed on LDA"""
 # Count word frequencies
 from collections import defaultdict
 frequency = defaultdict(int)
-for text in texts:
+for text in cleaned_texts:
     for token in text:
         frequency[token] += 1 # Increase frecuency Token or decrease depending espected results
 # Only keep words that appear more than once
@@ -69,9 +102,12 @@ dictionary = corpora.Dictionary(processed_corpus)
 print(dictionary)
 # Convert the dictionary to a bag-of-words corpus for reference.
 corpus = [dictionary.doc2bow(text) for text in processed_corpus]
-# Concept similare
-
+# Concept similares
+#%%
 """ Train an LDA model using a Gensim corpus """
+
+number_topics = 7
+number_words = 10
 
 # Create a corpus from a list of texts
 common_dictionary = Dictionary(common_texts)
@@ -79,21 +115,22 @@ common_corpus = [common_dictionary.doc2bow(text) for text in common_texts]
 # Train the LDA model on the BoW corpus.
 #lda = LdaModel(corpus, num_topics=10)
 # Train the LDA model
-lda_model = LdaModel(corpus, num_topics=10, id2word=dictionary, passes=30)
+lda_model = LdaModel(corpus, num_topics=number_topics, id2word=dictionary, passes=30)
 #lda = models.LdaModel(corpus, num_topics=10)
 
 #%%
 """ Print LDA Topic Modeling vector """
-topics = lda_model.print_topics(num_words=10)
-for topic in topics:
-    print(topic)
-# Generate human-readable topic names
 # Iterate through each topic
-for topic_number, topic in lda_model.print_topics(num_topics=10, num_words=10):
+for topic_number, topic in lda_model.print_topics(num_topics=number_topics, num_words=number_words):
+    print("Topic Number:", topic_number)
+    print("Original Topic String:", topic)
     # Extract words and their weights
     words = topic.split('+')
+    print("Split Words:", words)
     # Remove the weights and keep only the words
-    words = [word.split('*')[1].replace('"', '').strip() for word in words]
+    words = [word.split('*') for word in words if '*' in word]
+    words = [word[1].replace('"', '').strip() for word in words]
+    print("Processed Words:", words)
     # Create a readable string for each topic
     topic_str = ", ".join(words)
     print(f"Topic {topic_number}: {topic_str}")
@@ -105,19 +142,20 @@ pyLDAvis.display(vis_data)
 #%%
 
 # Print LDA Topic Modeling vector
-topics = lda_model.print_topics(num_words=10)
+topics = lda_model.print_topics(num_words=number_words)
 for topic in topics:
     print(topic)
 
-#%%
-    
-# Generate human-readable topic names
+#%% 
+""" Generate human-readable topic names """
 # Iterate through each topic
-for topic_number, topic in lda_model.print_topics(num_topics=10, num_words=10):
+for topic_number, topic in lda_model.print_topics(num_topics=number_topics, num_words=number_words):
     # Extract words and their weights
     words = topic.split('+')
     # Remove the weights and keep only the words
-    words = [word.split('*')[1].replace('"', '').strip() for word in words]
+    # Remove the weights and keep only the words, while handling the IndexError
+    words = [word.split('*')[1].replace('"', '').strip() for word in words if len(word.split('*')) > 1]
     # Create a readable string for each topic
     topic_str = ", ".join(words)
     print(f"Topic {topic_number}: {topic_str}")
+# %%

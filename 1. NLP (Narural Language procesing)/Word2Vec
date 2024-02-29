@@ -31,8 +31,8 @@ for doc in text_corpus:
 # Train Word2Vec model on the preprocessed corpus
 model = Word2Vec(sentences=preprocessed_corpus, vector_size=100, window=5, min_count=1, sg=0)
 
-# Save the Word2Vec model
-model.save("word2vec_model")
+# Save the Word2Vec model on a location
+model.save("1. NLP (Narural Language procesing)\word2vec_model")
 
 # Load the Word2Vec model
 model = Word2Vec.load("word2vec_model")
