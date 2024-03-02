@@ -37,7 +37,7 @@ AI Tools dataset documented on the official framework Government databases
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/ee44dd05-daa6-41a3-bae8-3180de5ded20)
 
-XXX 
+XXX  
 
 # Explanaiton of resources, process, and requirements
 
