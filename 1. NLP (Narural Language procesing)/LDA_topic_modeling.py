@@ -10,6 +10,7 @@ Key_concepts = [
 ]
 
 import pprint
+from collections import defaultdict
 import pandas as pd
 from gensim import corpora, models
 from gensim.test.utils import common_texts
