@@ -87,7 +87,7 @@ trigram_texts = [trigram_phraser[bigram_phraser[text]] for text in lemmatized_te
 cleaned_texts = [[word for word in text if word not in stop_words] for text in trigram_texts]
 
 #%%
-""" Tokenize and Build frame of words to being processed on LDA"""
+""" Tokenize and Build frame of words to being processed on LDA with POS = Proper Nouns"""
 # Define a function to filter tokens by POS tags
 def filter_pos(tokens, allowed_pos_tags):
     tagged_tokens = nltk.pos_tag(tokens)
@@ -119,6 +119,7 @@ print(dictionary)
 # Convert the dictionary to a bag-of-words corpus for reference.
 corpus = [dictionary.doc2bow(text) for text in processed_corpus]
 
+""" Tokenize and Build frame of words to being processed on LDA without POS"""
 """
 # Count word frequencies
 from collections import defaultdict
