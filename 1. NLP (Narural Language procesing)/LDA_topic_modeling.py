@@ -29,6 +29,7 @@ from gensim.models.phrases import Phraser
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 
 import spacy
 nlp = spacy.load('en_core_web_sm')
@@ -87,6 +88,38 @@ cleaned_texts = [[word for word in text if word not in stop_words] for text in t
 
 #%%
 """ Tokenize and Build frame of words to being processed on LDA"""
+# Define a function to filter tokens by POS tags
+def filter_pos(tokens, allowed_pos_tags):
+    tagged_tokens = nltk.pos_tag(tokens)
+    return [token for token, tag in tagged_tokens if tag in allowed_pos_tags]
+
+# Allowed POS tags based on your requirements
+#allowed_pos_tags = ['NN', 'NNS', 'NNP', 'NNPS', 'VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
+# Proper nouns refer to specific names, organizations, or places. 
+allowed_pos_tags = ['NNP', 'NNPS']
+
+
+# Apply POS filtering
+filtered_texts = [filter_pos(text, allowed_pos_tags) for text in cleaned_texts]
+
+# Count word frequencies
+frequency = defaultdict(int)
+for text in filtered_texts:
+    for token in text:
+        frequency[token] += 1
+
+# Only keep words that appear more than once
+processed_corpus = [[token for token in text if frequency[token] > 1] for text in filtered_texts]
+pprint.pprint(processed_corpus)
+
+# Create a Dictionary for the processed corpus
+dictionary = corpora.Dictionary(processed_corpus)
+print(dictionary)
+
+# Convert the dictionary to a bag-of-words corpus for reference.
+corpus = [dictionary.doc2bow(text) for text in processed_corpus]
+
+"""
 # Count word frequencies
 from collections import defaultdict
 frequency = defaultdict(int)
@@ -102,7 +135,7 @@ dictionary = corpora.Dictionary(processed_corpus)
 print(dictionary)
 # Convert the dictionary to a bag-of-words corpus for reference.
 corpus = [dictionary.doc2bow(text) for text in processed_corpus]
-# Concept similares
+# Concept similares"""
 #%%
 """ Train an LDA model using a Gensim corpus """
 

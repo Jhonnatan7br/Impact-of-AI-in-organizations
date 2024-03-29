@@ -16,6 +16,9 @@ First, it was trained and used an NLP (Natural Language Processing model to anal
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/db46d0e8-0e3e-49c8-96d0-8c7764a8d91e)
 
+>[!NOTE]
+>For the Part of Speech (POS) it was used only the following categories proper nouns (NNP, NNPS), technical terms (domain-specific), nouns (NN, NNS), and verbs (VB, VBD, VBG, VBN, VBP, VBZ) 
+
 EXTRACTED TOPICS TABLE
 
 Taking into account that the impact and interest in use cases of AI is increasing, especially since 2018, it can be made the following graph to see this tendency (Scopus dataset)
