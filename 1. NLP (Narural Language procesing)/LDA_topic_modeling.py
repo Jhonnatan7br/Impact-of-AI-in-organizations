@@ -87,7 +87,28 @@ trigram_texts = [trigram_phraser[bigram_phraser[text]] for text in lemmatized_te
 cleaned_texts = [[word for word in text if word not in stop_words] for text in trigram_texts]
 
 #%%
+
+""" Tokenize and Build frame of words to being processed on LDA without POS"""
+
+# Count word frequencies
+from collections import defaultdict
+frequency = defaultdict(int)
+for text in cleaned_texts:
+    for token in text:
+        frequency[token] += 1 # Increase frecuency Token or decrease depending espected results
+# Only keep words that appear more than once
+processed_corpus = [[token for token in text if frequency[token] > 1] for text in texts]
+pprint.pprint(processed_corpus)
+# Attempting to directly pass processed_corpus to LdaModel without first converting it to a Bag-of-Words (BoW) format using the doc2bow method for each document
+# Create Dictionary for processed corpus
+dictionary = corpora.Dictionary(processed_corpus)
+print(dictionary)
+# Convert the dictionary to a bag-of-words corpus for reference.
+corpus = [dictionary.doc2bow(text) for text in processed_corpus]
+# Concept similares
+
 """ Tokenize and Build frame of words to being processed on LDA with POS = Proper Nouns"""
+"""
 # Define a function to filter tokens by POS tags
 def filter_pos(tokens, allowed_pos_tags):
     tagged_tokens = nltk.pos_tag(tokens)
@@ -118,25 +139,9 @@ print(dictionary)
 
 # Convert the dictionary to a bag-of-words corpus for reference.
 corpus = [dictionary.doc2bow(text) for text in processed_corpus]
-
-""" Tokenize and Build frame of words to being processed on LDA without POS"""
 """
-# Count word frequencies
-from collections import defaultdict
-frequency = defaultdict(int)
-for text in cleaned_texts:
-    for token in text:
-        frequency[token] += 1 # Increase frecuency Token or decrease depending espected results
-# Only keep words that appear more than once
-processed_corpus = [[token for token in text if frequency[token] > 1] for text in texts]
-pprint.pprint(processed_corpus)
-# Attempting to directly pass processed_corpus to LdaModel without first converting it to a Bag-of-Words (BoW) format using the doc2bow method for each document
-# Create Dictionary for processed corpus
-dictionary = corpora.Dictionary(processed_corpus)
-print(dictionary)
-# Convert the dictionary to a bag-of-words corpus for reference.
-corpus = [dictionary.doc2bow(text) for text in processed_corpus]
-# Concept similares"""
+
+
 #%%
 """ Train an LDA model using a Gensim corpus """
 

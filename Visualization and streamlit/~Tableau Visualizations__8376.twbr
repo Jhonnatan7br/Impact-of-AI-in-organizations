@@ -823,7 +823,7 @@
       <column caption='Issn' datatype='string' name='[ISSN]' role='dimension' type='nominal' />
       <column datatype='integer' name='[PubMed ID]' role='dimension' type='ordinal' />
       <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='AI Projects (Business Research).csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
       <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
@@ -851,7 +851,7 @@
       </default-sorts>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
-          <object caption='scopus.csv' id='scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639'>
+          <object caption='AI Projects (Business Research).csv' id='scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639'>
             <properties context=''>
               <relation connection='textscan.1egnvhj0rzgswd17mndfx0lqvdov' name='scopus.csv' table='[scopus#csv]' type='table'>
                 <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
@@ -941,9 +941,9 @@
           <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
             <column datatype='string' name='[Affiliations]' role='dimension' type='nominal' />
             <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='AI Projects (Business Research).csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
-            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='AI Projects (Business Research).csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[Affiliations]' derivation='None' name='[none:Affiliations:nk]' pivot='key' type='nominal' />
             <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
@@ -1038,9 +1038,9 @@
             <column datatype='string' name='[Affiliations]' role='dimension' type='nominal' />
             <column datatype='integer' name='[Cited by]' role='measure' type='quantitative' />
             <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='AI Projects (Business Research).csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
-            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='AI Projects (Business Research).csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[Affiliations]' derivation='None' name='[none:Affiliations:nk]' pivot='key' type='nominal' />
             <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Cited by]' derivation='Sum' name='[sum:Cited by:qk]' pivot='key' type='quantitative' />
@@ -1105,9 +1105,9 @@
           <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
             <column datatype='string' name='[Authors]' role='dimension' type='nominal' />
             <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='AI Projects (Business Research).csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
-            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='AI Projects (Business Research).csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[Authors]' derivation='None' name='[none:Authors:nk]' pivot='key' type='nominal' />
             <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
@@ -1183,9 +1183,9 @@
             <column datatype='integer' name='[Cited by]' role='measure' type='quantitative' />
             <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
             <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
-            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='AI Projects (Business Research).csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' forecast-column-base='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' forecast-column-type='forecast-value' name='[__tableau_internal_object_id__].[fVal:cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
-            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='AI Projects (Business Research).csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[Cited by]' derivation='Sum' forecast-column-base='[sum:Cited by:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Cited by:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
             <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
@@ -1255,9 +1255,9 @@
           <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
             <column datatype='string' name='[Conference name]' role='dimension' type='nominal' />
             <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='AI Projects (Business Research).csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
-            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='AI Projects (Business Research).csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[Conference name]' derivation='None' name='[none:Conference name:nk]' pivot='key' type='nominal' />
             <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
@@ -1408,9 +1408,9 @@
           <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
             <column datatype='string' name='[Publisher]' role='dimension' type='nominal' />
             <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='AI Projects (Business Research).csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
-            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='AI Projects (Business Research).csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[Publisher]' derivation='None' name='[none:Publisher:nk]' pivot='key' type='nominal' />
             <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
@@ -1466,9 +1466,9 @@
           <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
             <column datatype='string' name='[Sponsors]' role='dimension' type='nominal' />
             <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='AI Projects (Business Research).csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
-            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='AI Projects (Business Research).csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
             <column-instance column='[Sponsors]' derivation='None' name='[none:Sponsors:nk]' pivot='key' type='nominal' />
             <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
@@ -1652,7 +1652,7 @@
       </datasources>
       <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
         <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
-        <column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+        <column caption='AI Projects (Business Research).csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
       </datasource-dependencies>
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
@@ -1840,7 +1840,7 @@
       <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
         <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
         <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
-        <column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+        <column caption='AI Projects (Business Research).csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
         <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
       </datasource-dependencies>
       <zones>
@@ -1995,7 +1995,7 @@
       <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
         <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
         <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
-        <column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+        <column caption='AI Projects (Business Research).csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
         <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
       </datasource-dependencies>
       <zones>
@@ -2312,7 +2312,7 @@
       <active id='-1' />
       <simple-id uuid='{068D4EC9-E4F9-40BD-AD89-8ED90FB08189}' />
     </window>
-    <window class='dashboard' maximized='true' name='Sponsors'>
+    <window class='dashboard' name='Sponsors'>
       <viewpoints>
         <viewpoint name='Sponsor' />
         <viewpoint name='Sponsor Citations' />
@@ -2320,7 +2320,7 @@
       <active id='-1' />
       <simple-id uuid='{506728D2-EBB7-46E5-9979-FFA25D29E092}' />
     </window>
-    <window class='dashboard' name='Conferences'>
+    <window class='dashboard' maximized='true' name='Conferences'>
       <viewpoints>
         <viewpoint name='Conference' />
         <viewpoint name='Conference Citations' />
