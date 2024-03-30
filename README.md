@@ -20,16 +20,27 @@ First, it was trained and used an NLP (Natural Language Processing model to anal
 >[!NOTE]
 >For the Part of Speech (POS) it was used only the following categories proper nouns (NNP, NNPS), technical terms (domain-specific), nouns (NN, NNS), and verbs (VB, VBD, VBG, VBN, VBP, VBZ) 
 
-EXTRACTED TOPICS TABLE
+### Topics Table
 
-Taking into account that the impact and interest in use cases of AI is increasing, especially since 2018, it can be made the following graph to see this tendency (Scopus dataset)
+| Topic | Keywords                                                                                      |
+|-------|----------------------------------------------------------------------------------------------|
+| 0     | logic, framework, theory, reasoning, agent, heidelberg, representation, model, belief, temporal, notion, formal |
+| 1     | ai, political, social, article, book, university, french, economic, theory, positive, ., financial |
+| 2     | spatial, early, area, central, site, late, trade, cortical, cortex, observed, evidence, neural |
+| 3     | system, information, model, learning, design, order, user, task, semantic, complex, framework, application |
+| 4     | research, language, human, speech, article, product, taylor, social, development, francis, french, understanding |
+| 5     | system, control, energy, surface, channel, supply, rate, design, performance, structure, phase, obtained |
+| 6     | model, algorithm, method, learning, search, performance, optimization, neural, network, optimal, solution, linear |
+| 7     | research, management, digital, ai, network, technology, business, social, information, energy, security, service |
 
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/65f3156f-370b-4602-95f4-34311a4d13fc)
+
+### Principal organizations, sponsors, conferences and Autors 
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/234ccb27-cf1c-45dd-83a0-fc9f1e1c86a2)
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/82990006-97fa-4403-b927-923b22bc675e)
 
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/1591fa54-e547-4eb4-8ed7-1143098ceebb)
 
 
 After that, it was searched the relation between the topics found and the data through statistical analysis
