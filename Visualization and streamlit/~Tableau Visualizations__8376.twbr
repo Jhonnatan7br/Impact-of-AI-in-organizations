@@ -1,0 +1,2047 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1227.1336                               -->
+<workbook original-version='18.1' source-build='2023.3.1 (20233.23.1227.1336)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='scopus' inline='true' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='scopus' name='textscan.1egnvhj0rzgswd17mndfx0lqvdov'>
+            <connection class='textscan' directory='C:/Users/Jhonnatan/Documents/GitHub/Impact-of-AI-in-organizations/Datasets' filename='scopus.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1egnvhj0rzgswd17mndfx0lqvdov' name='scopus.csv' table='[scopus#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='string' name='Authors' ordinal='0' />
+            <column datatype='string' name='Author full names' ordinal='1' />
+            <column datatype='string' name='Author(s) ID' ordinal='2' />
+            <column datatype='string' name='Title' ordinal='3' />
+            <column datatype='integer' name='Year' ordinal='4' />
+            <column datatype='string' name='Source title' ordinal='5' />
+            <column datatype='string' name='Volume' ordinal='6' />
+            <column datatype='integer' name='Issue' ordinal='7' />
+            <column datatype='integer' name='Art. No.' ordinal='8' />
+            <column datatype='integer' name='Page start' ordinal='9' />
+            <column datatype='integer' name='Page end' ordinal='10' />
+            <column datatype='integer' name='Page count' ordinal='11' />
+            <column datatype='integer' name='Cited by' ordinal='12' />
+            <column datatype='string' name='DOI' ordinal='13' />
+            <column datatype='string' name='Link' ordinal='14' />
+            <column datatype='string' name='Affiliations' ordinal='15' />
+            <column datatype='string' name='Authors with affiliations' ordinal='16' />
+            <column datatype='string' name='Abstract' ordinal='17' />
+            <column datatype='string' name='Author Keywords' ordinal='18' />
+            <column datatype='string' name='Index Keywords' ordinal='19' />
+            <column datatype='string' name='Molecular Sequence Numbers' ordinal='20' />
+            <column datatype='string' name='Chemicals/CAS' ordinal='21' />
+            <column datatype='string' name='Tradenames' ordinal='22' />
+            <column datatype='string' name='Manufacturers' ordinal='23' />
+            <column datatype='string' name='Funding Details' ordinal='24' />
+            <column datatype='string' name='Funding Texts' ordinal='25' />
+            <column datatype='string' name='References' ordinal='26' />
+            <column datatype='string' name='Correspondence Address' ordinal='27' />
+            <column datatype='string' name='Editors' ordinal='28' />
+            <column datatype='string' name='Publisher' ordinal='29' />
+            <column datatype='string' name='Sponsors' ordinal='30' />
+            <column datatype='string' name='Conference name' ordinal='31' />
+            <column datatype='string' name='Conference date' ordinal='32' />
+            <column datatype='string' name='Conference location' ordinal='33' />
+            <column datatype='integer' name='Conference code' ordinal='34' />
+            <column datatype='string' name='ISSN' ordinal='35' />
+            <column datatype='string' name='ISBN' ordinal='36' />
+            <column datatype='string' name='CODEN' ordinal='37' />
+            <column datatype='integer' name='PubMed ID' ordinal='38' />
+            <column datatype='string' name='Language of Original Document' ordinal='39' />
+            <column datatype='string' name='Abbreviated Source Title' ordinal='40' />
+            <column datatype='string' name='Document Type' ordinal='41' />
+            <column datatype='string' name='Publication Stage' ordinal='42' />
+            <column datatype='string' name='Open Access' ordinal='43' />
+            <column datatype='string' name='Source' ordinal='44' />
+            <column datatype='string' name='EID' ordinal='45' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1egnvhj0rzgswd17mndfx0lqvdov' name='scopus.csv' table='[scopus#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='string' name='Authors' ordinal='0' />
+            <column datatype='string' name='Author full names' ordinal='1' />
+            <column datatype='string' name='Author(s) ID' ordinal='2' />
+            <column datatype='string' name='Title' ordinal='3' />
+            <column datatype='integer' name='Year' ordinal='4' />
+            <column datatype='string' name='Source title' ordinal='5' />
+            <column datatype='string' name='Volume' ordinal='6' />
+            <column datatype='integer' name='Issue' ordinal='7' />
+            <column datatype='integer' name='Art. No.' ordinal='8' />
+            <column datatype='integer' name='Page start' ordinal='9' />
+            <column datatype='integer' name='Page end' ordinal='10' />
+            <column datatype='integer' name='Page count' ordinal='11' />
+            <column datatype='integer' name='Cited by' ordinal='12' />
+            <column datatype='string' name='DOI' ordinal='13' />
+            <column datatype='string' name='Link' ordinal='14' />
+            <column datatype='string' name='Affiliations' ordinal='15' />
+            <column datatype='string' name='Authors with affiliations' ordinal='16' />
+            <column datatype='string' name='Abstract' ordinal='17' />
+            <column datatype='string' name='Author Keywords' ordinal='18' />
+            <column datatype='string' name='Index Keywords' ordinal='19' />
+            <column datatype='string' name='Molecular Sequence Numbers' ordinal='20' />
+            <column datatype='string' name='Chemicals/CAS' ordinal='21' />
+            <column datatype='string' name='Tradenames' ordinal='22' />
+            <column datatype='string' name='Manufacturers' ordinal='23' />
+            <column datatype='string' name='Funding Details' ordinal='24' />
+            <column datatype='string' name='Funding Texts' ordinal='25' />
+            <column datatype='string' name='References' ordinal='26' />
+            <column datatype='string' name='Correspondence Address' ordinal='27' />
+            <column datatype='string' name='Editors' ordinal='28' />
+            <column datatype='string' name='Publisher' ordinal='29' />
+            <column datatype='string' name='Sponsors' ordinal='30' />
+            <column datatype='string' name='Conference name' ordinal='31' />
+            <column datatype='string' name='Conference date' ordinal='32' />
+            <column datatype='string' name='Conference location' ordinal='33' />
+            <column datatype='integer' name='Conference code' ordinal='34' />
+            <column datatype='string' name='ISSN' ordinal='35' />
+            <column datatype='string' name='ISBN' ordinal='36' />
+            <column datatype='string' name='CODEN' ordinal='37' />
+            <column datatype='integer' name='PubMed ID' ordinal='38' />
+            <column datatype='string' name='Language of Original Document' ordinal='39' />
+            <column datatype='string' name='Abbreviated Source Title' ordinal='40' />
+            <column datatype='string' name='Document Type' ordinal='41' />
+            <column datatype='string' name='Publication Stage' ordinal='42' />
+            <column datatype='string' name='Open Access' ordinal='43' />
+            <column datatype='string' name='Source' ordinal='44' />
+            <column datatype='string' name='EID' ordinal='45' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Authors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Authors]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Authors</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Author full names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Author full names]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Author full names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Author(s) ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Author(s) ID]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Author(s) ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source title]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Source title</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Volume]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Volume</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Issue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Issue]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Issue</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Art. No.</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Art. No.]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Art. No.</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Page start</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Page start]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Page start</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Page end</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Page end]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Page end</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Page count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Page count]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Page count</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cited by</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cited by]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Cited by</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOI</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DOI]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>DOI</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Link]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Link</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Affiliations</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Affiliations]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Affiliations</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Authors with affiliations</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Authors with affiliations]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Authors with affiliations</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Abstract</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Abstract]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Abstract</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Author Keywords</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Author Keywords]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Author Keywords</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Index Keywords</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Index Keywords]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Index Keywords</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Molecular Sequence Numbers</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Molecular Sequence Numbers]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Molecular Sequence Numbers</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Chemicals/CAS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Chemicals/CAS]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Chemicals/CAS</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tradenames</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tradenames]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Tradenames</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Manufacturers</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Manufacturers]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Manufacturers</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Funding Details</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Funding Details]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Funding Details</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Funding Texts</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Funding Texts]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Funding Texts</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>References</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[References]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>References</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Correspondence Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Correspondence Address]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Correspondence Address</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Editors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Editors]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Editors</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Publisher</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Publisher]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Publisher</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sponsors</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sponsors]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Sponsors</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Conference name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Conference name]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Conference name</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Conference date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Conference date]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Conference date</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Conference location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Conference location]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Conference location</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Conference code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Conference code]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Conference code</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISSN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ISSN]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>ISSN</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISBN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ISBN]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>ISBN</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODEN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CODEN]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>CODEN</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PubMed ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PubMed ID]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>PubMed ID</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Language of Original Document</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Language of Original Document]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Language of Original Document</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Abbreviated Source Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Abbreviated Source Title]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Abbreviated Source Title</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Document Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Document Type]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Document Type</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Publication Stage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Publication Stage]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Publication Stage</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Open Access</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Open Access]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Open Access</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>Source</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EID]</local-name>
+            <parent-name>[scopus.csv]</parent-name>
+            <remote-alias>EID</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Coden' datatype='string' name='[CODEN]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Conference code]' role='dimension' type='ordinal' />
+      <column caption='Isbn' datatype='string' name='[ISBN]' role='dimension' type='nominal' />
+      <column caption='Issn' datatype='string' name='[ISSN]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[PubMed ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Forecast Indicator:nk]' palette='blue_10_0' type='palette'>
+            <map to='#001381'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#abaee7'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='scopus.csv' id='scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639'>
+            <properties context=''>
+              <relation connection='textscan.1egnvhj0rzgswd17mndfx0lqvdov' name='scopus.csv' table='[scopus#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+                  <column datatype='string' name='Authors' ordinal='0' />
+                  <column datatype='string' name='Author full names' ordinal='1' />
+                  <column datatype='string' name='Author(s) ID' ordinal='2' />
+                  <column datatype='string' name='Title' ordinal='3' />
+                  <column datatype='integer' name='Year' ordinal='4' />
+                  <column datatype='string' name='Source title' ordinal='5' />
+                  <column datatype='string' name='Volume' ordinal='6' />
+                  <column datatype='integer' name='Issue' ordinal='7' />
+                  <column datatype='integer' name='Art. No.' ordinal='8' />
+                  <column datatype='integer' name='Page start' ordinal='9' />
+                  <column datatype='integer' name='Page end' ordinal='10' />
+                  <column datatype='integer' name='Page count' ordinal='11' />
+                  <column datatype='integer' name='Cited by' ordinal='12' />
+                  <column datatype='string' name='DOI' ordinal='13' />
+                  <column datatype='string' name='Link' ordinal='14' />
+                  <column datatype='string' name='Affiliations' ordinal='15' />
+                  <column datatype='string' name='Authors with affiliations' ordinal='16' />
+                  <column datatype='string' name='Abstract' ordinal='17' />
+                  <column datatype='string' name='Author Keywords' ordinal='18' />
+                  <column datatype='string' name='Index Keywords' ordinal='19' />
+                  <column datatype='string' name='Molecular Sequence Numbers' ordinal='20' />
+                  <column datatype='string' name='Chemicals/CAS' ordinal='21' />
+                  <column datatype='string' name='Tradenames' ordinal='22' />
+                  <column datatype='string' name='Manufacturers' ordinal='23' />
+                  <column datatype='string' name='Funding Details' ordinal='24' />
+                  <column datatype='string' name='Funding Texts' ordinal='25' />
+                  <column datatype='string' name='References' ordinal='26' />
+                  <column datatype='string' name='Correspondence Address' ordinal='27' />
+                  <column datatype='string' name='Editors' ordinal='28' />
+                  <column datatype='string' name='Publisher' ordinal='29' />
+                  <column datatype='string' name='Sponsors' ordinal='30' />
+                  <column datatype='string' name='Conference name' ordinal='31' />
+                  <column datatype='string' name='Conference date' ordinal='32' />
+                  <column datatype='string' name='Conference location' ordinal='33' />
+                  <column datatype='integer' name='Conference code' ordinal='34' />
+                  <column datatype='string' name='ISSN' ordinal='35' />
+                  <column datatype='string' name='ISBN' ordinal='36' />
+                  <column datatype='string' name='CODEN' ordinal='37' />
+                  <column datatype='integer' name='PubMed ID' ordinal='38' />
+                  <column datatype='string' name='Language of Original Document' ordinal='39' />
+                  <column datatype='string' name='Abbreviated Source Title' ordinal='40' />
+                  <column datatype='string' name='Document Type' ordinal='41' />
+                  <column datatype='string' name='Publication Stage' ordinal='42' />
+                  <column datatype='string' name='Open Access' ordinal='43' />
+                  <column datatype='string' name='Source' ordinal='44' />
+                  <column datatype='string' name='EID' ordinal='45' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+      <datasources>
+        <datasource caption='scopus' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]' included-values='in-range'>
+        <min>1985</min>
+        <max>2023</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Afiliations'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Principal Afiliations</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scopus' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+            <column datatype='string' name='[Affiliations]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[Affiliations]' derivation='None' name='[none:Affiliations:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' included-values='in-range'>
+            <min>3</min>
+            <max>7</max>
+          </filter>
+          <slices>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]</column>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#cecee5</color>
+                <color>#aeaeda</color>
+                <color>#9090ce</color>
+                <color>#7575c3</color>
+                <color>#5c5cb8</color>
+                <color>#4545ac</color>
+                <color>#3030a1</color>
+                <color>#1d1d95</color>
+                <color>#0d0d8a</color>
+                <color>#00007f</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' />
+              <color column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' />
+              <text column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Affiliations:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7EE85871-CC69-4560-9032-0AB983AFEFAD}' />
+    </worksheet>
+    <worksheet name='Afiliations Citations'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Afiliations Citations</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scopus' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+            <column datatype='string' name='[Affiliations]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Cited by]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[Affiliations]' derivation='None' name='[none:Affiliations:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cited by]' derivation='Sum' name='[sum:Cited by:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>7</max>
+          </filter>
+          <computed-sort column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Affiliations:nk]' direction='DESC' using='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[sum:Cited by:qk]' />
+          <slices>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]</column>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Affiliations:nk]' value='264' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#00007f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Affiliations:nk]</rows>
+        <cols>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[sum:Cited by:qk]</cols>
+      </table>
+      <simple-id uuid='{27F777D7-B7A4-428E-BCCD-F50FF9E8C9A6}' />
+    </worksheet>
+    <worksheet name='Autors'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Principal Autors</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scopus' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+            <column datatype='string' name='[Authors]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[Authors]' derivation='None' name='[none:Authors:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' included-values='in-range'>
+            <min>4</min>
+            <max>18</max>
+          </filter>
+          <slices>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]</column>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#cecee5</color>
+                <color>#aeaeda</color>
+                <color>#9090ce</color>
+                <color>#7575c3</color>
+                <color>#5c5cb8</color>
+                <color>#4545ac</color>
+                <color>#3030a1</color>
+                <color>#1d1d95</color>
+                <color>#0d0d8a</color>
+                <color>#00007f</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' />
+              <color column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' />
+              <text column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Authors:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DFFD8BEB-9B7E-48E6-8D59-831C4371E527}' />
+    </worksheet>
+    <worksheet name='By Year Until 2023'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>By Year Until 2023, AI Business Research and Citations</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scopus' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+            <column datatype='integer' name='[Cited by]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' forecast-column-base='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' forecast-column-type='forecast-value' name='[__tableau_internal_object_id__].[fVal:cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[Cited by]' derivation='Sum' forecast-column-base='[sum:Cited by:qk]' forecast-column-type='forecast-value' name='[fVal:sum:Cited by:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cited by]' derivation='Sum' name='[sum:Cited by:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[fVal:cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' scope='rows' value='Count of research' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[fVal:cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[fVal:sum:Cited by:qk]' scope='rows' value='Citation (Interest Rate)' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[fVal:sum:Cited by:qk]' field-type='quantitative' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Forecast Indicator:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[fVal:cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Forecast Indicator:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[fVal:sum:Cited by:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Forecast Indicator:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[fVal:cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk] + [federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[fVal:sum:Cited by:qk])</rows>
+        <cols>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-missing' ignore-last='1' model-type='auto-season' range-periods='None' range-size='5' range-type='next' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{4F95BC48-88DA-4DA4-A238-48617CD9D1AC}' />
+    </worksheet>
+    <worksheet name='Conference'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Principal Conferences</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scopus' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+            <column datatype='string' name='[Conference name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[Conference name]' derivation='None' name='[none:Conference name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' included-values='in-range'>
+            <min>8</min>
+            <max>45</max>
+          </filter>
+          <filter class='categorical' column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Conference name:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Conference name:nk]' />
+              <groupfilter function='member' level='[none:Conference name:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Conference name:nk]</column>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]</column>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#cecee5</color>
+                <color>#aeaeda</color>
+                <color>#9090ce</color>
+                <color>#7575c3</color>
+                <color>#5c5cb8</color>
+                <color>#4545ac</color>
+                <color>#3030a1</color>
+                <color>#1d1d95</color>
+                <color>#0d0d8a</color>
+                <color>#00007f</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' />
+              <color column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' />
+              <text column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Conference name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2ACD0553-D2CC-4266-B2F9-41BF7621E97B}' />
+    </worksheet>
+    <worksheet name='Conference Citations'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scopus' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+            <column datatype='integer' name='[Cited by]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Conference name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Conference name]' derivation='None' name='[none:Conference name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cited by]' derivation='Sum' name='[sum:Cited by:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Conference name:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Conference name:nk]' />
+              <groupfilter function='member' level='[none:Conference name:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Conference name:nk]' direction='DESC' using='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[sum:Cited by:qk]' />
+          <slices>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Conference name:nk]</column>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Conference name:nk]' value='344' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#00007f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Conference name:nk]</rows>
+        <cols>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[sum:Cited by:qk]</cols>
+      </table>
+      <simple-id uuid='{8086F642-11F8-49E9-9386-BDF4DB8D921D}' />
+    </worksheet>
+    <worksheet name='Publisher'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Principal Publisher Sources</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scopus' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+            <column datatype='string' name='[Publisher]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[Publisher]' derivation='None' name='[none:Publisher:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Publisher:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Publisher:nk]' />
+              <groupfilter function='member' level='[none:Publisher:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Publisher:nk]' direction='DESC' using='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' />
+          <slices>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Publisher:nk]</column>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Publisher:nk]' value='332' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#00007f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Publisher:nk]</rows>
+        <cols>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]</cols>
+      </table>
+      <simple-id uuid='{3C9DE275-4277-4E98-BA15-58C91A0631B5}' />
+    </worksheet>
+    <worksheet name='Sponsor'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Principal Sponsors</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scopus' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+            <column datatype='string' name='[Sponsors]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='scopus.csv' datatype='integer' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+            <column-instance column='[Sponsors]' derivation='None' name='[none:Sponsors:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' included-values='in-range'>
+            <min>6</min>
+            <max>55</max>
+          </filter>
+          <filter class='categorical' column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Sponsors:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Sponsors:nk]' />
+              <groupfilter function='member' level='[none:Sponsors:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Sponsors:nk]</column>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]</column>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#cfd0e6</color>
+                <color>#afb2db</color>
+                <color>#9296d0</color>
+                <color>#767cc5</color>
+                <color>#5d63bb</color>
+                <color>#464db0</color>
+                <color>#3139a5</color>
+                <color>#1e279a</color>
+                <color>#0e178f</color>
+                <color>#000985</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' />
+              <color column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' />
+              <text column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Sponsors:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1DE2B54D-9552-4CF4-91DB-EE24023C9229}' />
+    </worksheet>
+    <worksheet name='Sponsor Citations'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scopus' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+            <column datatype='integer' name='[Cited by]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sponsors]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Sponsors]' derivation='None' name='[none:Sponsors:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cited by]' derivation='Sum' name='[sum:Cited by:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Sponsors:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Cited by])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:Sponsors:nk]' />
+                  <groupfilter function='member' level='[none:Sponsors:nk]' member='%null%' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Sponsors:nk]' direction='DESC' using='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[sum:Cited by:qk]' />
+          <slices>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Sponsors:nk]</column>
+            <column>[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[sum:Cited by:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#cecee5</color>
+                <color>#aeaeda</color>
+                <color>#9090ce</color>
+                <color>#7575c3</color>
+                <color>#5c5cb8</color>
+                <color>#4545ac</color>
+                <color>#3030a1</color>
+                <color>#1d1d95</color>
+                <color>#0d0d8a</color>
+                <color>#00007f</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[sum:Cited by:qk]' />
+              <size column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[sum:Cited by:qk]' />
+              <text column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Sponsors:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-color' value='#1900a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{72C5A8D7-1236-4BD9-89A7-1DD616AF3688}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='scopus' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' pivot='key' type='quantitative' />
+        <column caption='scopus.csv' datatype='table' name='[__tableau_internal_object_id__].[scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639]' role='measure' type='quantitative' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='7' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='5' type-v2='layout-basic' w='98828' x='586' y='1042'>
+              <zone h='61458' id='3' name='Sponsor' w='49414' x='586' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='97916' id='10' name='Sponsor Citations' w='49414' x='50000' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='36458' id='12' name='By Year Until 2023' w='24707' x='586' y='62500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='160' h='36458' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='24707' x='25293' y='62500'>
+                <zone h='7683' id='8' name='Sponsor' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='24707' x='25293' y='62500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='10546' id='9' name='Sponsor' pane-specification-id='0' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' type-v2='color' w='24707' x='25293' y='70183'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='10546' id='11' name='Sponsor Citations' pane-specification-id='0' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[sum:Cited by:qk]' type-v2='color' w='24707' x='25293' y='80729'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='7683' id='13' name='By Year Until 2023' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='24707' x='25293' y='91275'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1AD4F828-5E0D-4467-AEAC-CC7CC80DBFCE}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Year and sources'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='scopus' name='federated.0bmn0df0t4v7j61atv2hq0wpdc0u' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0bmn0df0t4v7j61atv2hq0wpdc0u'>
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='7' param='horz' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='97916' id='5' type-v2='layout-basic' w='98828' x='586' y='1042'>
+              <zone h='56826' id='3' name='By Year Until 2023' w='86173' x='586' y='1042'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41090' id='10' name='Publisher' w='98828' x='586' y='57868'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='160' h='56826' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='12655' x='86759' y='1042'>
+                <zone h='10938' id='9' name='By Year Until 2023' pane-specification-id='1' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Forecast Indicator:nk]' type-v2='color' w='12069' x='87052' y='1563'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='10026' id='8' name='By Year Until 2023' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='12069' x='87052' y='12501'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{64343C63-AE07-4312-9C08-F3ADF666BDF7}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='dashboard' name='Year and sources'>
+      <viewpoints>
+        <viewpoint name='By Year Until 2023'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Publisher' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{068D4EC9-E4F9-40BD-AD89-8ED90FB08189}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='By Year Until 2023'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sponsor' />
+        <viewpoint name='Sponsor Citations' />
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{506728D2-EBB7-46E5-9979-FFA25D29E092}' />
+    </window>
+    <window class='worksheet' name='By Year Until 2023'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='1' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{09950805-B234-4A67-AE41-FC896AC6EC44}' />
+    </window>
+    <window class='worksheet' name='Sponsor'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3BEE7FE7-2A4A-42C7-AC5E-0EBD3FAED018}' />
+    </window>
+    <window class='worksheet' name='Sponsor Citations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[sum:Cited by:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8F1EE25D-7A0D-47F1-B711-683E458D3570}' />
+    </window>
+    <window class='worksheet' name='Conference'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F791BCB6-279F-457C-9C8A-9EB22CCC16A1}' />
+    </window>
+    <window class='worksheet' name='Conference Citations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FF59F22B-9B77-4B6C-B389-5FC76E4F15B7}' />
+    </window>
+    <window class='worksheet' name='Afiliations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{579E49DF-13F7-4C13-89B6-21B483B5CBD0}' />
+    </window>
+    <window class='worksheet' name='Afiliations Citations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7D7ACD5A-365C-4E7E-B910-D87C60C98F70}' />
+    </window>
+    <window class='worksheet' name='Autors'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B62C266-7493-49DF-BE71-73A7929FA6E0}' />
+    </window>
+    <window class='worksheet' name='Publisher'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6194DB30-E6CF-4470-9498-0422CBBFCED1}' />
+    </window>
+  </windows>
+</workbook>
