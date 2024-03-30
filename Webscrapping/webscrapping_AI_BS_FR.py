@@ -1,3 +1,4 @@
+#%%
 from googlesearch import search
 import csv
 from bs4 import BeautifulSoup
@@ -54,8 +55,9 @@ if __name__ == "__main__":
 
     # Scrape news articles from the Google search
     news_data = scrape_news(search_query)
-
     # Create and save a CSV file in the 'Datasets' folder
     create_and_save_csv(news_data)
-    print(f"{len(news_data)} news articles scraped and saved to 'Datasets/news_articles.csv'")    
+    print(f"{len(news_data)} news articles scraped and saved to 'Datasets/news_articles2023.csv'")    
     #print(f"{len(news_data)} news articles scraped and saved to 'Datasets/news_articles.csv'")
+
+# %%
