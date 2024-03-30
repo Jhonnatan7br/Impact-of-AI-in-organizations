@@ -1521,7 +1521,7 @@
             <column-instance column='[Cited by]' derivation='Sum' name='[sum:Cited by:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Sponsors:nk]'>
-            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
               <groupfilter direction='DESC' expression='SUM([Cited by])' function='order' user:ui-marker='order'>
                 <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
                   <groupfilter function='level-members' level='[none:Sponsors:nk]' />
@@ -1590,7 +1590,7 @@
     </worksheet>
   </worksheets>
   <dashboards>
-    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Sponsors'>
       <style />
       <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
       <datasources>
@@ -1622,16 +1622,8 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='36458' id='12' name='By Year Until 2023' w='24707' x='586' y='62500'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone fixed-size='160' h='36458' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='24707' x='25293' y='62500'>
-                <zone h='7683' id='8' name='Sponsor' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='24707' x='25293' y='62500'>
+              <zone fixed-size='160' h='36458' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='49414' x='586' y='62500'>
+                <zone h='7683' id='8' name='Sponsor' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='49414' x='586' y='62500'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1639,7 +1631,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='10546' id='9' name='Sponsor' pane-specification-id='0' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' type-v2='color' w='24707' x='25293' y='70183'>
+                <zone h='7683' id='13' name='Sponsor' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='49414' x='586' y='70183'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1647,7 +1639,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='10546' id='11' name='Sponsor Citations' pane-specification-id='0' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[sum:Cited by:qk]' type-v2='color' w='24707' x='25293' y='80729'>
+                <zone h='10546' id='9' name='Sponsor' pane-specification-id='0' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[__tableau_internal_object_id__].[cnt:scopus.csv_2CCDC3D00F2E45679F3C1A88146FE639:qk]' type-v2='color' w='49414' x='586' y='77866'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1655,7 +1647,7 @@
                     <format attr='margin' value='4' />
                   </zone-style>
                 </zone>
-                <zone h='7683' id='13' name='By Year Until 2023' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='24707' x='25293' y='91275'>
+                <zone h='10546' id='11' name='Sponsor Citations' pane-specification-id='0' param='[federated.0bmn0df0t4v7j61atv2hq0wpdc0u].[sum:Cited by:qk]' type-v2='color' w='49414' x='586' y='88412'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1786,15 +1778,12 @@
       <active id='-1' />
       <simple-id uuid='{068D4EC9-E4F9-40BD-AD89-8ED90FB08189}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 2'>
+    <window class='dashboard' name='Sponsors'>
       <viewpoints>
-        <viewpoint name='By Year Until 2023'>
-          <zoom type='entire-view' />
-        </viewpoint>
         <viewpoint name='Sponsor' />
         <viewpoint name='Sponsor Citations' />
       </viewpoints>
-      <active id='12' />
+      <active id='-1' />
       <simple-id uuid='{506728D2-EBB7-46E5-9979-FFA25D29E092}' />
     </window>
     <window class='worksheet' name='By Year Until 2023'>
@@ -1826,7 +1815,7 @@
       </cards>
       <simple-id uuid='{09950805-B234-4A67-AE41-FC896AC6EC44}' />
     </window>
-    <window class='worksheet' name='Sponsor'>
+    <window class='worksheet' maximized='true' name='Sponsor'>
       <cards>
         <edge name='left'>
           <strip size='160'>
