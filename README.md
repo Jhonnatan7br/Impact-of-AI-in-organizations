@@ -42,6 +42,10 @@ First, it was trained and used an NLP (Natural Language Processing model to anal
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/1591fa54-e547-4eb4-8ed7-1143098ceebb)
 
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/7b0494a6-e315-4866-8b1f-1b524b509c07)
+
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/df3f4275-89e5-447a-9985-72e820e50380)
+
 
 After that, it was searched the relation between the topics found and the data through statistical analysis
 
