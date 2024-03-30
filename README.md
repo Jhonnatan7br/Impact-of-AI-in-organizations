@@ -126,15 +126,6 @@ It could be made a BigData analysis of news with web scrapping, but it could be 
         pip install googlesearch-python
         pip install streamlit
 
-    #### For Azure and other API's connection
-        pip install azure-ai-textanalytics
-        pip install azure-identity
-        pip install python-dotenv
-
-    ### For BERT transformers with pytorch
-        pip install torch
-        pip install transformers torch
-
     #### For Topic Modeling 
         pip install --upgrade gensim
         pip install Pyro4
@@ -156,6 +147,16 @@ It could be made a BigData analysis of news with web scrapping, but it could be 
         pip install gensim nltk pyLDAvis
         pip install gensim nltk matplotlib
         pip install Flask
+        pip install TextBlob
+
+    #### For Azure and other API's connection
+        pip install azure-ai-textanalytics
+        pip install azure-identity
+        pip install python-dotenv
+
+    ### For BERT transformers with pytorch
+        pip install torch
+        pip install transformers torch
 
     #### For better optimization with NumPy and OpenBLAS on the NLP with topic modeling
         pip install numpy --only-binary :numpy: numpy
