@@ -7,14 +7,15 @@
 How organizations could be impacted by machine learning and AI?
 This question is particularly pertinent in the context of modern business management research, as it delves into a critical aspect of organizational dynamics in the face of advancing technologies. I've chosen to focus on the impact of machine learning and AI tools because they've already begun to reshape how work is organized within organizations, whether through the automation of routine tasks, augmentation of decision-making processes, or the emergence of entirely new roles and responsibilities centered around AI integration.
 
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/a7af70bf-7066-4832-9bd3-c495e66fc619)
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/5973a6e0-e855-44ce-91ae-0d134ba70629)
+
 
 URL Dashboard Tableau Public: 
 https://public.tableau.com/app/profile/jhonnatan.david.betancourt.rodriguez/viz/ImpactofAIinBusiness/Dashboard1?publish=yes
 
-First, it was trained and used an NLP (Natural Language Processing model to analyze research, articles, governmental and news information, there were used LDA, LSA, and BERT machine learning models
+First, it was trained and used an NLP (Natural Language Processing model to analyze research, articles, governmental and news information, there were used LDA and LSA
 
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/db46d0e8-0e3e-49c8-96d0-8c7764a8d91e)
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/0b99d1be-5e45-4b52-84af-713244b9a7ea)
 
 >[!NOTE]
 >For the Part of Speech (POS) it was used only the following categories proper nouns (NNP, NNPS), technical terms (domain-specific), nouns (NN, NNS), and verbs (VB, VBD, VBG, VBN, VBP, VBZ) 
@@ -24,6 +25,12 @@ EXTRACTED TOPICS TABLE
 Taking into account that the impact and interest in use cases of AI is increasing, especially since 2018, it can be made the following graph to see this tendency (Scopus dataset)
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/65f3156f-370b-4602-95f4-34311a4d13fc)
+
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/234ccb27-cf1c-45dd-83a0-fc9f1e1c86a2)
+
+![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/82990006-97fa-4403-b927-923b22bc675e)
+
+
 
 After that, it was searched the relation between the topics found and the data through statistical analysis
 
