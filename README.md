@@ -46,8 +46,8 @@ First, it was trained and used an NLP (Natural Language Processing model to anal
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/df3f4275-89e5-447a-9985-72e820e50380)
 
-
 After that, it was searched the relation between the topics found and the data through statistical analysis
+
 
 Understanding this tendency to grow and starting to analyze official information documented by the government of France through 93 cases (FRgov dataset), it was applied a keyword frequency statistic to ensure in wich industries it exist more cases and if it was a correlation between the results of Topic Modeling
 
