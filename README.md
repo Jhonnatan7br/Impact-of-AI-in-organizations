@@ -9,7 +9,7 @@ This question is particularly pertinent in the context of modern business manage
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/5973a6e0-e855-44ce-91ae-0d134ba70629)
 
-
+ 
 URL Dashboard Tableau Public: 
 https://public.tableau.com/app/profile/jhonnatan.david.betancourt.rodriguez/viz/ImpactofAIinBusiness/Dashboard1?publish=yes
 
