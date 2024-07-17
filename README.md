@@ -1,7 +1,7 @@
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d87a7990-b7c8-4769-a55e-9e028f2ca039) 
  
 ### This repository is on construction
- 
+  
 # Aim of subject, experiments & diagram
  
 How organizations could be impacted by machine learning and AI?
