@@ -188,20 +188,5 @@ It could be made a BigData analysis of news with web scrapping, but it could be 
         pip install numpy --only-binary :numpy: numpy
         pip install numpy --no-binary numpy
 
-### To Solve or TO DO
-
-- Cleaning, lemmatization, bigram  
-    Coherence, perplexity, bow technique (Best topics, and optimal quantity of topics)
-- Analyse supplémentaires, statistics, tire de graph ou graph de mot clé
-    Measures de sémantique au donnes (Peut etre regression)
-    Sentiment analysis de marche, avec les sujets exposes pour le topic modeling
-
-- Solve size of tensor of "Labels" on BERT
-- Build Azure features
-    Text analysis Message: Batch request contains too many records. Max 10 records are permitted. (Create a cycle to iterate)
-    https://language.cognitive.azure.com/tryout/namedEntities 
-- Based on Topic Modeling results, construct a financial analysis of companies that appear are most related to AI 
-    Topics - Industries - Enterprises CAC40 - There is a correlation between the increase of research on certain fields and industries and the increase of value of companies on the same industry?
-
 >[!NOTE]
 >References: disposed on the file 'references.txt'
