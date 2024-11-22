@@ -25,35 +25,6 @@ IMG
 | 7     | research, management, digital, ai, network, technology, business, social, information, energy, security, service |
 
 
-### Principal organizations, sponsors, conferences and Autors 
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/234ccb27-cf1c-45dd-83a0-fc9f1e1c86a2)
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/82990006-97fa-4403-b927-923b22bc675e)
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/1591fa54-e547-4eb4-8ed7-1143098ceebb)
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/7b0494a6-e315-4866-8b1f-1b524b509c07)
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/df3f4275-89e5-447a-9985-72e820e50380)
-
-After that, it was searched the relation between the topics found and the data through statistical analysis
-
-Understanding this tendency to grow and starting to analyze official information documented by the government of France through 93 cases (FRgov dataset), it was applied a keyword frequency statistic to ensure in which industries it exist more cases and if it was a correlation between the results of Topic Modeling
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d92a6272-abaa-41f3-889f-85fd1f5ab996)
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/4b2f1c39-88a0-4d02-8eb3-51c839f7a28c)
-
-# AI Tools dataset documented on the official framework Government databases 
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/6e9acf04-ecc3-4fd2-b607-26242906ed57)
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/7afdc492-65bf-478a-9bf7-2f7aa92111ff)
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/ee44dd05-daa6-41a3-bae8-3180de5ded20)
-
-XXX  
 
 ## Data
 - Research about AI & business in France
