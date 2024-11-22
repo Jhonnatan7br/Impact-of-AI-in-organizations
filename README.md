@@ -3,27 +3,79 @@
 # Evolution of technology perception and industries adoption
 
 How organizations could be impacted by machine learning and AI?
-This question is particularly pertinent in the context of modern business management research, as it delves into a critical aspect of organizational dynamics in the face of advancing technologies. I've chosen to focus on the impact of machine learning and AI tools because they've already begun to reshape how work is organized within organizations, whether through the automation of routine tasks, augmentation of decision-making processes, or the emergence of entirely new roles and responsibilities centered around AI integration.
- 
-IMG
+This question is particularly pertinent in the context of modern business management research, as it delves into a critical aspect of organizational dynamics in the face of advancing technologies. 
 
+I've chosen to focus on the impact of machine learning and AI tools because they've already begun to reshape how work is organized within organizations, whether through the automation of routine tasks, augmentation of decision-making processes, or the emergence of entirely new roles and responsibilities centered around AI integration.
  
+![image](https://github.com/user-attachments/assets/d10456d3-da6a-4a6f-88ed-80cd0d919f86)
+
+![image](https://github.com/user-attachments/assets/4592e7f8-edd7-473d-a851-ab506600c4f7)
+
+# Vader sentiment Analysis Heuristics
+
+The sentiment analysis results were statistically analyzed using Scipy and Scikit-Learn libraries.
+This involved calculating average sentiment scores across different topics and keyword clusters,
+allowing for the identification of trends in how AI research is perceived across various
+organizational contexts. (Scikit-learn: Machine Learning in Python, Pedregosa et al. 2011) The
+statistical insights were supplemented with qualitative observations derived from the manual
+extraction of key concepts, adding depth to the interpretation of the data.
+
+![image](https://github.com/user-attachments/assets/1f396295-f87d-4d04-9ff5-2db320423bfc)
+![image](https://github.com/user-attachments/assets/4dc48422-ccc4-476c-84cc-75e417b158c0)
+
+#  Insights into Research Themes and Organizational Perception
+
+![image](https://github.com/user-attachments/assets/fe2abff3-2c47-47f1-9736-b9ffb078c37c)
+
+The bar chart showed on Figure 3 illustrates the sentiment score of research related to AI and
+machine learning from 1985 to 2023. The y-axis represents the average sentiment, with values
+ranging from 0 to 0.7, while the x-axis shows the years. Each bar corresponds to a specific year,
+with the sentiment score labeled at the top of each bar.
+
+![image](https://github.com/user-attachments/assets/6d3ecf2c-d821-4415-92ec-3624377ddcad)
+![image](https://github.com/user-attachments/assets/db4a9c72-529f-4b9c-93e6-3db7f3f78f98)
+![image](https://github.com/user-attachments/assets/d70b1ce7-0f4c-4407-bbe1-2e488529c8e9)
+
+This distribution reinforces the positive perception identified earlier, where AI and machine
+learning research, particularly in high-growth sectors like technology, transportation, and
+science, has increasingly been seen as favorable. (Curry et al. 2021). The clustering of sentiment
+around higher values suggests that organizations view these technologies as beneficial to
+operational efficiency, innovation, and strategic planning. The significant frequency of neutral
+sentiment scores aligns with the scientific rigor and objectivity often found in research
+documents, where results are presented with caution and without emotional bias.
+
+
 >[!NOTE]
 >For the Part of Speech (POS) it was used only the following categories proper nouns (NNP, NNPS), technical terms (domain-specific), nouns (NN, NNS), and verbs (VB, VBD, VBG, VBN, VBP, VBZ) 
 
-### Topics Table
+### Topics modeling and Table
 
-| Topic | Keywords                                                                                      |
-|-------|----------------------------------------------------------------------------------------------|
-| 0     | logic, framework, theory, reasoning, agent, heidelberg, representation, model, belief, temporal, notion, formal |
-| 1     | ai, political, social, article, book, university, french, economic, theory, positive, ., financial |
-| 2     | spatial, early, area, central, site, late, trade, cortical, cortex, observed, evidence, neural |
-| 3     | system, information, model, learning, design, order, user, task, semantic, complex, framework, application |
-| 4     | research, language, human, speech, article, product, taylor, social, development, francis, french, understanding |
-| 5     | system, control, energy, surface, channel, supply, rate, design, performance, structure, phase, obtained |
-| 6     | model, algorithm, method, learning, search, performance, optimization, neural, network, optimal, solution, linear |
-| 7     | research, management, digital, ai, network, technology, business, social, information, energy, security, service |
+![image](https://github.com/user-attachments/assets/7ef1e1dd-a956-45f1-920b-2fc7289f4817)
 
+The table and topic modeling presents a series of topics, each represented by the top keywords that define its
+thematic focus. These topics are likely the result of a topic modeling analysis, which identified
+patterns and recurring themes across a collection of AI and machine learning research
+documents. The terms within each topic provide insights into the specific areas of focus in the
+research corpus. For example, Topic 1, which includes terms like "economic," "european," and
+"political," suggests a focus on AI's impact within economic and policy-related contexts, while
+Topic 3, with terms like "research," "ai," and "design," centers on core AI methodologies and
+research practices. Other topics, such as Topic 7, with terms like "energy" and "security,"
+indicate AI's application in areas like energy systems and cybersecurity.
+
+| Topic 0        | Topic 1         | Topic 2           | Topic 3       | Topic 4       | Topic 5         | Topic 6       | Topic 7        |
+|-----------------|----------------|-------------------|---------------|---------------|-----------------|---------------|----------------|
+| search         | economic       | language          | research      | system        | early           | model         | energy         |
+| algorithm      | european       | logic             | ai            | model         | surface         | method        | security       |
+| linear         | political      | information       | design        | information   | showed          | performance   | channel        |
+| case           | environmental  | reasoning         | development   | design        | late            | neural        | system         |
+| tree           | impact         | representation    | digital       | order         | temperature     | algorithm     | connection     |
+| solution       | article        | framework         | social        | control       | observed        | network       | edge           |
+| random         | market         | theory            | work          | agent         | production      | machine       | wireless       |
+| ai             | french         | semantic          | article       | user          | material        | deep          | performance    |
+| optimal        | financial      | heidelberg        | human         | environment   | site            | optimization  | network        |
+| finite         | role           | fuzzy             | management    | complex       | atlas           | training      | detection      |
+| classical      | risk           | natural           | product       | framework     | age             | efficient     | timing         |
+| distribution   | local          | order             | machine       | dynamic       | middle          | control       | communication  |
 
 
 ## Data
