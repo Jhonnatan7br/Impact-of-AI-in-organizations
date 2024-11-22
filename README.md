@@ -5,16 +5,9 @@
 How organizations could be impacted by machine learning and AI?
 This question is particularly pertinent in the context of modern business management research, as it delves into a critical aspect of organizational dynamics in the face of advancing technologies. I've chosen to focus on the impact of machine learning and AI tools because they've already begun to reshape how work is organized within organizations, whether through the automation of routine tasks, augmentation of decision-making processes, or the emergence of entirely new roles and responsibilities centered around AI integration.
  
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/5973a6e0-e855-44ce-91ae-0d134ba70629)
+IMG
 
  
-URL Dashboard Tableau Public: 
-https://public.tableau.com/app/profile/jhonnatan.david.betancourt.rodriguez/viz/ImpactofAIinBusiness/Dashboard1?publish=yes
-
-First, it was trained and used an NLP (Natural Language Processing model to analyze research, articles, governmental and news information, there were used LDA and LSA
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/0b99d1be-5e45-4b52-84af-713244b9a7ea)
-
 >[!NOTE]
 >For the Part of Speech (POS) it was used only the following categories proper nouns (NNP, NNPS), technical terms (domain-specific), nouns (NN, NNS), and verbs (VB, VBD, VBG, VBN, VBP, VBZ) 
 
@@ -46,31 +39,21 @@ First, it was trained and used an NLP (Natural Language Processing model to anal
 
 After that, it was searched the relation between the topics found and the data through statistical analysis
 
-
-Understanding this tendency to grow and starting to analyze official information documented by the government of France through 93 cases (FRgov dataset), it was applied a keyword frequency statistic to ensure in wich industries it exist more cases and if it was a correlation between the results of Topic Modeling
+Understanding this tendency to grow and starting to analyze official information documented by the government of France through 93 cases (FRgov dataset), it was applied a keyword frequency statistic to ensure in which industries it exist more cases and if it was a correlation between the results of Topic Modeling
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d92a6272-abaa-41f3-889f-85fd1f5ab996)
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/4b2f1c39-88a0-4d02-8eb3-51c839f7a28c)
 
-AI Tools dataset documented on the official framework Government databases 
+# AI Tools dataset documented on the official framework Government databases 
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/6e9acf04-ecc3-4fd2-b607-26242906ed57)
-
-
-
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/7afdc492-65bf-478a-9bf7-2f7aa92111ff)
 
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/ee44dd05-daa6-41a3-bae8-3180de5ded20)
 
 XXX  
-
-# Explanaiton of resources, process, and requirements
-
-Dataset connections
-
-![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d06dacbf-888c-4844-8695-c020f5adcb66)
 
 ## Data
 - Research about AI & business in France
