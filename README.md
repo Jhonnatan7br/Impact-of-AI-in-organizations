@@ -1,9 +1,11 @@
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d87a7990-b7c8-4769-a55e-9e028f2ca039) 
- 
-# Evolution of technology perception and industries adoption
 
-How organizations could be impacted by machine learning and AI?
-This question is particularly pertinent in the context of modern business management research, as it delves into a critical aspect of organizational dynamics in the face of advancing technologies. 
+Official Document: https://1drv.ms/b/c/c91ef16cd60b809e/EZ6AC9Zs8R4ggMmNiwAAAAABa-Su2Cwlg6N9bias7ErzSw?e=x5fV2s 
+
+# Evolution of technology perception and industries' adoption
+
+How could machine learning and AI impact organizations?
+This question is particularly pertinent in modern business management research, as it delves into a critical aspect of organizational dynamics in the face of advancing technologies. 
 
 I've chosen to focus on the impact of machine learning and AI tools because they've already begun to reshape how work is organized within organizations, whether through the automation of routine tasks, augmentation of decision-making processes, or the emergence of entirely new roles and responsibilities centered around AI integration.
  
@@ -77,6 +79,29 @@ indicate AI's application in areas like energy systems and cybersecurity.
 | classical      | risk           | natural           | product       | framework     | age             | efficient     | timing         |
 | distribution   | local          | order             | machine       | dynamic       | middle          | control       | communication  |
 
+![image](https://github.com/user-attachments/assets/2f9ddc03-7738-4683-aeee-aea4bd8937ae)
+
+ Figure 9 describes the yearly fluctuation in average sentiment across various
+research topics. The y-axis represents average sentiment scores, while the x-axis shows the
+timeline from 1985 to 2020. Each colored line corresponds to a different research topic.
+Throughout the timeline, sentiment across all topics fluctuates, with notable variability in the
+earlier years, particularly between 1985 and 2000, where sharp rises and falls are observed.
+However, from 2000 onwards, the trends stabilize, and sentiment shows a gradual upward trend
+across most topics, particularly from 2015 onward.
+
+![image](https://github.com/user-attachments/assets/c3abd4bb-69ed-4b73-8883-88a6a6ea01f2)
+
+The Correlation Matrix in Figure 11 visualizes the relationships between sentiment scores across
+eight distinct AI research topics. The matrix is color-coded, with darker red shades indicating
+higher positive correlations and lighter shades reflecting weaker or negative correlations. Strong
+positive correlations, such as between Topics 1 and 7 (0.95), or Topics 0 and 3 (0.90), suggest
+thematic or perceptual overlap, meaning that research in these areas tends to evoke similar
+sentiment reactions. In contrast, weaker correlations, such as between Topic 4 and Topic 2
+(0.47), indicate that sentiment perceptions in these areas diverge, possibly due to differences in
+focus or complexity.
+
+![image](https://github.com/user-attachments/assets/4a8fe48f-e3cd-4716-83ba-82d08840ccee)
+![image](https://github.com/user-attachments/assets/b1e03337-5720-4e66-9cca-ee28dad8e4ee)
 
 ## Data
 - Research about AI & business in France
