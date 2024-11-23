@@ -132,10 +132,6 @@ focus or complexity.
     - According to the results obtained from previous experiments on this project and guided by topic modeling structure, it has been selected specific companies that are related to AI use cases on their internal processes to analyze how the impact was received. The dataset built based on financial statements and open financial information 
     - URL: https://fr.finance.yahoo.com/             
 
-## Main conclusions
-
-It could be made a BigData analysis of news with web scrapping, but it could be necessary more computational power, optimal connection and latency to wifi and a certain budget on Azure API of text analysis to analyze more data  
-
 >[!WARNING]
 > It is necessary to install the libraries listed below and understand the requirements to make the hypothesis and Data Treatment
 
