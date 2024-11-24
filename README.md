@@ -3,7 +3,7 @@
 Official Document: https://1drv.ms/b/c/c91ef16cd60b809e/EZ6AC9Zs8R4ggMmNiwAAAAABa-Su2Cwlg6N9bias7ErzSw?e=x5fV2s 
 
 # Evolution of technology perception and industries' adoption
-
+ 
 How could machine learning and AI impact organizations?
 This question is particularly pertinent in modern business management research, as it delves into a critical aspect of organizational dynamics in the face of advancing technologies. 
 
