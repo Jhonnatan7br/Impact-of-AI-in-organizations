@@ -1,7 +1,7 @@
 ![image](https://github.com/Jhonnatan7br/Impact-of-AI-in-organizations/assets/104907786/d87a7990-b7c8-4769-a55e-9e028f2ca039) 
  
 Official Document: https://1drv.ms/b/c/c91ef16cd60b809e/EZ6AC9Zs8R4ggMmNiwAAAAABa-Su2Cwlg6N9bias7ErzSw?e=x5fV2s 
-
+ 
 # Evolution of technology perception and industries' adoption
  
 How could machine learning and AI impact organizations?
